@@ -1,0 +1,159 @@
+﻿{
+    "bugs":  {
+                 "url":  "https://github.com/expo/expo/issues"
+             },
+    "dist":  {
+                 "shasum":  "dfc73c5c2b580dfb2656194184cced9d7b044228",
+                 "tarball":  "https://registry.npmjs.org/expo-glass-effect/-/expo-glass-effect-58.0.5.tgz",
+                 "fileCount":  55,
+                 "integrity":  "sha512-PkL1X/r0cTs6NG47Xp3TxRvtqSeRmPYhPOHp3GDmZB2oOxpjXge6qLi/bSSv0asFWqf+MLOlXZ+hq2Imuh0Z1g==",
+                 "signatures":  [
+                                    {
+                                        "sig":  "MEQCIFPnLO3qwcROecSHdQpAADprqi4q0nRxJWAB0kCmqLkJAiAlCQ2cYCgMxYUtmVroDJMl9AAqGV6J7zHu19VqZTDfsQ==",
+                                        "keyid":  "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+                                    },
+                                    {
+                                        "sig":  "MEQCIBz/tPkRIXMlkvN5nlnryPmhwGFKIwY+lHnhdVoC+fVKAiBFMhqqY+iJqptA4emHariVJ8ofWBEUlAgcv5u9ebPLyA==",
+                                        "keyid":  "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+                                    }
+                                ],
+                 "attestations":  {
+                                      "url":  "https://registry.npmjs.org/-/npm/v1/attestations/expo-glass-effect@58.0.5",
+                                      "provenance":  {
+                                                         "predicateType":  "https://slsa.dev/provenance/v1"
+                                                     }
+                                  },
+                 "unpackedSize":  48867
+             },
+    "jest":  {
+                 "preset":  "@expo/internal-scripts"
+             },
+    "main":  "build/index.js",
+    "name":  "expo-glass-effect",
+    "types":  "build/index.d.ts",
+    "author":  "650 Industries, Inc.",
+    "exports":  {
+                    ".":  {
+                              "types":  {
+                                            "default":  "./build/index.d.ts",
+                                            "expo-source":  "./src/index.ts"
+                                        },
+                              "default":  "./build/index.js",
+                              "expo-source":  "./src/index.ts"
+                          },
+                    "./package.json":  "./package.json"
+                },
+    "license":  "MIT",
+    "scripts":  {
+                    "lint":  "oxlint --config oxlint.config.mjs .",
+                    "test":  "jest",
+                    "build":  "expo-build src",
+                    "clean":  "expo-module clean",
+                    "format":  "expo-module format",
+                    "depscheck":  "expo-module depscheck",
+                    "typecheck":  "tsc -p tsconfig.json"
+                },
+    "_npmUser":  {
+                     "name":  "GitHub Actions",
+                     "email":  "npm-oidc-no-reply@github.com",
+                     "trustedPublisher":  {
+                                              "id":  "github",
+                                              "oidcConfigId":  "633c5f9f-f71c-489c-95f0-e0381812341b"
+                                          }
+                 },
+    "homepage":  "https://docs.expo.dev/versions/latest/sdk/glass-effect/",
+    "keywords":  [
+                     "apple",
+                     "expo",
+                     "expo-glass-effect",
+                     "liquid-glass",
+                     "react-native"
+                 ],
+    "repository":  {
+                       "url":  "https://github.com/expo/expo.git",
+                       "type":  "git",
+                       "directory":  "packages/expo-glass-effect"
+                   },
+    "description":  "A component that renders a native glass effect view on iOS.",
+    "directories":  {
+
+                    },
+    "maintainers":  [
+                        {
+                            "name":  "ide",
+                            "email":  "ide+npm@jameside.com"
+                        },
+                        {
+                            "name":  "brentvatne",
+                            "email":  "brentvatne@gmail.com"
+                        },
+                        {
+                            "name":  "expoadmin",
+                            "email":  "support@expo.io"
+                        },
+                        {
+                            "name":  "exponent",
+                            "email":  "exponent.team@gmail.com"
+                        },
+                        {
+                            "name":  "bycedric",
+                            "email":  "me@bycedric.com"
+                        },
+                        {
+                            "name":  "kudochien",
+                            "email":  "ckchien@gmail.com"
+                        },
+                        {
+                            "name":  "alanhughes",
+                            "email":  "hughesno1@gmail.com"
+                        },
+                        {
+                            "name":  "tsapeta",
+                            "email":  "npm@tsapeta.com"
+                        },
+                        {
+                            "name":  "expo-bot",
+                            "email":  "brent+expobotnpm@expo.io"
+                        },
+                        {
+                            "name":  "philpl",
+                            "email":  "phil@kitten.sh"
+                        },
+                        {
+                            "name":  "ccheever",
+                            "email":  "ccheever@gmail.com"
+                        },
+                        {
+                            "name":  "szdziedzic",
+                            "email":  "sz.dziedz@gmail.com"
+                        },
+                        {
+                            "name":  "wschurman",
+                            "email":  "wschurman@gmail.com"
+                        }
+                    ],
+    "sideEffects":  false,
+    "dependencies":  {
+
+                     },
+    "_hasShrinkwrap":  false,
+    "devDependencies":  {
+                            "@types/react":  "~19.3.0",
+                            "@testing-library/dom":  "^10.4.0",
+                            "@expo/internal-scripts":  "58.0.4",
+                            "@testing-library/react":  "^16.3.0",
+                            "@testing-library/jest-dom":  "^6.9.1",
+                            "@testing-library/react-native":  "^14.0.1"
+                        },
+    "peerDependencies":  {
+                             "expo":  "*",
+                             "react":  "*",
+                             "react-native":  "*"
+                         },
+    "_npmOperationalInternal":  {
+                                    "tmp":  "tmp/expo-glass-effect_58.0.5_1792797820298_0.37076697522252733",
+                                    "host":  "s3://npm-registry-packages-npm-production"
+                                },
+    "_id":  "expo-glass-effect@58.0.5",
+    "version":  "58.0.5"
+}

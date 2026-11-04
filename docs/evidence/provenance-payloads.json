@@ -1,0 +1,66 @@
+[
+  {
+    "_type": "https://in-toto.io/Statement/v0.1",
+    "subject": [
+      {
+        "name": "pkg:npm/expo-glass-effect@58.0.5",
+        "digest": {
+          "sha512": "3e42f55ffaf4713b3a346e3b5e9dd3c51beda9279198f6213ce1e9dc60e6641da83b1a635e07baa8b8bf6d24afd1ab055aa7fe30b3a55d9fa1ab6226ba1d19d6"
+        }
+      }
+    ],
+    "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+    "predicate": {
+      "name": "expo-glass-effect",
+      "version": "58.0.5",
+      "registry": "https://registry.npmjs.org"
+    }
+  },
+  {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+      {
+        "name": "pkg:npm/expo-glass-effect@58.0.5",
+        "digest": {
+          "sha512": "3e42f55ffaf4713b3a346e3b5e9dd3c51beda9279198f6213ce1e9dc60e6641da83b1a635e07baa8b8bf6d24afd1ab055aa7fe30b3a55d9fa1ab6226ba1d19d6"
+        }
+      }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+      "buildDefinition": {
+        "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+        "externalParameters": {
+          "workflow": {
+            "ref": "refs/heads/main",
+            "repository": "https://github.com/expo/expo",
+            "path": ".github/workflows/publish-packages.yml"
+          }
+        },
+        "internalParameters": {
+          "github": {
+            "event_name": "push",
+            "repository_id": "65750241",
+            "repository_owner_id": "12504344"
+          }
+        },
+        "resolvedDependencies": [
+          {
+            "uri": "git+https://github.com/expo/expo@refs/heads/main",
+            "digest": {
+              "gitCommit": "a6078233c87546c50d56c8bc85f75253a78daed7"
+            }
+          }
+        ]
+      },
+      "runDetails": {
+        "builder": {
+          "id": "https://github.com/actions/runner/github-hosted"
+        },
+        "metadata": {
+          "invocationId": "https://github.com/expo/expo/actions/runs/40038148144/attempts/1"
+        }
+      }
+    }
+  }
+]

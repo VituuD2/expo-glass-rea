@@ -1,0 +1,114 @@
+.glass-view {
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+  --glass-tint: var(--glass-tint-light, transparent);
+  --glass-surface: rgb(255 255 255 / .35);
+  --glass-edge: rgb(255 255 255 / .7);
+  --glass-fallback: #f1f3f5;
+  border-top-left-radius: var(--glass-radius-tl, var(--glass-radius-ts, var(--glass-radius-uniform, 0px)));
+  border-top-right-radius: var(--glass-radius-tr, var(--glass-radius-te, var(--glass-radius-uniform, 0px)));
+  border-bottom-left-radius: var(--glass-radius-bl, var(--glass-radius-bs, var(--glass-radius-uniform, 0px)));
+  border-bottom-right-radius: var(--glass-radius-br, var(--glass-radius-be, var(--glass-radius-uniform, 0px)));
+}
+.glass-view:dir(rtl) {
+  border-top-left-radius: var(--glass-radius-tl, var(--glass-radius-te, var(--glass-radius-uniform, 0px)));
+  border-top-right-radius: var(--glass-radius-tr, var(--glass-radius-ts, var(--glass-radius-uniform, 0px)));
+  border-bottom-left-radius: var(--glass-radius-bl, var(--glass-radius-be, var(--glass-radius-uniform, 0px)));
+  border-bottom-right-radius: var(--glass-radius-br, var(--glass-radius-bs, var(--glass-radius-uniform, 0px)));
+}
+.glass-view__effect {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  corner-shape: inherit;
+  pointer-events: none;
+  z-index: -1;
+  background: var(--glass-fallback, #f1f3f5);
+  box-shadow: inset 0 1px 0 var(--glass-edge), inset 0 0 0 1px rgb(255 255 255 / .27), 0 8px 32px rgb(20 34 43 / .08);
+  transition-property: opacity, background-color, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: var(--glass-duration, 0s);
+  transition-timing-function: ease;
+}
+.glass-view__effect::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--glass-tint, transparent);
+  border-radius: inherit;
+  corner-shape: inherit;
+  opacity: .5;
+}
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass-view__effect {
+    background: var(--glass-surface);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    backdrop-filter: blur(18px) saturate(160%);
+  }
+  .glass-view[data-glass-style='clear'] .glass-view__effect {
+    background: rgb(255 255 255 / .09);
+    -webkit-backdrop-filter: blur(5px) saturate(125%);
+    backdrop-filter: blur(5px) saturate(125%);
+  }
+}
+.glass-view[data-glass-supported='false'] > .glass-view__effect {
+  background: var(--glass-fallback, #f1f3f5);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+.glass-view[data-glass-style='none'] > .glass-view__effect { opacity: 0; }
+.glass-view[data-glass-interactive='true']:is(:hover, :focus-within) > .glass-view__effect {
+  box-shadow: inset 0 1px 0 var(--glass-edge), inset 0 0 0 2px rgb(255 255 255 / .55), 0 12px 34px rgb(20 34 43 / .15);
+}
+.glass-view[data-glass-interactive='true']:active > .glass-view__effect { background-color: var(--glass-edge); }
+.glass-container { position: relative; }
+.glass-container__defs { position: absolute; inset: 0; pointer-events: none; }
+.glass-container__material {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: rgb(255 255 255 / .4);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass-container__material { display: none; }
+}
+@media (prefers-color-scheme: dark) {
+  .glass-view[data-glass-color-scheme='auto'] {
+    --glass-tint: var(--glass-tint-dark, transparent);
+    --glass-surface: rgb(20 29 37 / .48);
+    --glass-edge: rgb(255 255 255 / .24);
+    --glass-fallback: #202b35;
+  }
+}
+.glass-view[data-glass-color-scheme='dark'] {
+  --glass-tint: var(--glass-tint-dark, transparent);
+  --glass-surface: rgb(20 29 37 / .48);
+  --glass-edge: rgb(255 255 255 / .24);
+  --glass-fallback: #202b35;
+}
+@supports (color: light-dark(white, black)) {
+  .glass-view[data-glass-color-scheme] {
+    --glass-tint: light-dark(var(--glass-tint-light, transparent), var(--glass-tint-dark, transparent));
+    --glass-surface: light-dark(rgb(255 255 255 / .35), rgb(20 29 37 / .48));
+    --glass-edge: light-dark(rgb(255 255 255 / .7), rgb(255 255 255 / .24));
+    --glass-fallback: light-dark(#f1f3f5, #202b35);
+  }
+  .glass-view[data-glass-style='clear'] .glass-view__effect { background: light-dark(rgb(255 255 255 / .09), rgb(13 23 34 / .15)); }
+  .glass-container__material { background: light-dark(rgb(255 255 255 / .4), rgb(37 49 63 / .5)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .glass-view__effect { transition-duration: 0s !important; }
+}
+@media (prefers-contrast: more) {
+  .glass-view[data-glass-color-scheme] { --glass-tint: light-dark(var(--glass-tint-contrast-light), var(--glass-tint-contrast-dark)); }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .glass-view__effect { background: var(--glass-fallback) !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+  .glass-container__material { display: none; }
+}
+@media (forced-colors: active) {
+  .glass-view__effect { background: Canvas !important; box-shadow: none !important; outline: 1px solid CanvasText; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+  .glass-view__effect::after, .glass-container__material { display: none; }
+}

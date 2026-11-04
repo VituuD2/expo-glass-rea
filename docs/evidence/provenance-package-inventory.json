@@ -1,0 +1,450 @@
+[
+  {
+    "name": ".npmignore",
+    "path": "packages/expo-glass-effect/.npmignore",
+    "sha": "445eee20d8d665d95ccf73e69d244c4741cf0525",
+    "size": 766,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/.npmignore?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/.npmignore",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/445eee20d8d665d95ccf73e69d244c4741cf0525",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/.npmignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/.npmignore?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/445eee20d8d665d95ccf73e69d244c4741cf0525",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/.npmignore"
+    }
+  },
+  {
+    "name": "CHANGELOG.md",
+    "path": "packages/expo-glass-effect/CHANGELOG.md",
+    "sha": "d0b4212b273fc01a2d19f772201b04d9f9509e85",
+    "size": 7385,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/CHANGELOG.md?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/CHANGELOG.md",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/d0b4212b273fc01a2d19f772201b04d9f9509e85",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/CHANGELOG.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/CHANGELOG.md?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/d0b4212b273fc01a2d19f772201b04d9f9509e85",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/CHANGELOG.md"
+    }
+  },
+  {
+    "name": "README.md",
+    "path": "packages/expo-glass-effect/README.md",
+    "sha": "b54d8e873245712da04e732c46c96e98c05d2cf9",
+    "size": 1427,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/README.md?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/README.md",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/b54d8e873245712da04e732c46c96e98c05d2cf9",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/README.md?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/b54d8e873245712da04e732c46c96e98c05d2cf9",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/README.md"
+    }
+  },
+  {
+    "name": "expo-module.config.json",
+    "path": "packages/expo-glass-effect/expo-module.config.json",
+    "sha": "906c52e369bd19dc602df9458b6b7fd45903fe2f",
+    "size": 101,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/expo-module.config.json?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/expo-module.config.json",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/906c52e369bd19dc602df9458b6b7fd45903fe2f",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/expo-module.config.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/expo-module.config.json?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/906c52e369bd19dc602df9458b6b7fd45903fe2f",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/expo-module.config.json"
+    }
+  },
+  {
+    "name": "ExpoGlassEffect.podspec",
+    "path": "packages/expo-glass-effect/ios/ExpoGlassEffect.podspec",
+    "sha": "419340b6b8e14ace05739e40301ba18c2db0b77c",
+    "size": 637,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/ios/ExpoGlassEffect.podspec?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/ExpoGlassEffect.podspec",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/419340b6b8e14ace05739e40301ba18c2db0b77c",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/ExpoGlassEffect.podspec",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/ios/ExpoGlassEffect.podspec?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/419340b6b8e14ace05739e40301ba18c2db0b77c",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/ExpoGlassEffect.podspec"
+    }
+  },
+  {
+    "name": "GlassContainer.swift",
+    "path": "packages/expo-glass-effect/ios/GlassContainer.swift",
+    "sha": "61fb67cdfa2022f57524ddde05096067055e9ee6",
+    "size": 1750,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/ios/GlassContainer.swift?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassContainer.swift",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/61fb67cdfa2022f57524ddde05096067055e9ee6",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassContainer.swift",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/ios/GlassContainer.swift?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/61fb67cdfa2022f57524ddde05096067055e9ee6",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassContainer.swift"
+    }
+  },
+  {
+    "name": "GlassEffectModule.swift",
+    "path": "packages/expo-glass-effect/ios/GlassEffectModule.swift",
+    "sha": "8420334f1f3ebe1c30779aff0e6af925acf64b24",
+    "size": 4133,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/ios/GlassEffectModule.swift?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassEffectModule.swift",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/8420334f1f3ebe1c30779aff0e6af925acf64b24",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassEffectModule.swift",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/ios/GlassEffectModule.swift?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/8420334f1f3ebe1c30779aff0e6af925acf64b24",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassEffectModule.swift"
+    }
+  },
+  {
+    "name": "GlassStyle.swift",
+    "path": "packages/expo-glass-effect/ios/GlassStyle.swift",
+    "sha": "bfd913cc6ad22d7ec15948901bd15ce377395470",
+    "size": 883,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/ios/GlassStyle.swift?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassStyle.swift",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/bfd913cc6ad22d7ec15948901bd15ce377395470",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassStyle.swift",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/ios/GlassStyle.swift?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/bfd913cc6ad22d7ec15948901bd15ce377395470",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassStyle.swift"
+    }
+  },
+  {
+    "name": "GlassView.swift",
+    "path": "packages/expo-glass-effect/ios/GlassView.swift",
+    "sha": "862c16a9231450de940024abb051a1d90e1e8eeb",
+    "size": 10851,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/ios/GlassView.swift?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassView.swift",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/862c16a9231450de940024abb051a1d90e1e8eeb",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassView.swift",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/ios/GlassView.swift?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/862c16a9231450de940024abb051a1d90e1e8eeb",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassView.swift"
+    }
+  },
+  {
+    "name": "oxlint.config.mjs",
+    "path": "packages/expo-glass-effect/oxlint.config.mjs",
+    "sha": "dceaedeae018d2e209131feb1832fd18ab503b65",
+    "size": 109,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/oxlint.config.mjs?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/oxlint.config.mjs",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/dceaedeae018d2e209131feb1832fd18ab503b65",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/oxlint.config.mjs",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/oxlint.config.mjs?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/dceaedeae018d2e209131feb1832fd18ab503b65",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/oxlint.config.mjs"
+    }
+  },
+  {
+    "name": "package.json",
+    "path": "packages/expo-glass-effect/package.json",
+    "sha": "bd12a470c0317c286f1f9bd52f28173704f03492",
+    "size": 1685,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/package.json?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/package.json",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/bd12a470c0317c286f1f9bd52f28173704f03492",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/package.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/package.json?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/bd12a470c0317c286f1f9bd52f28173704f03492",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/package.json"
+    }
+  },
+  {
+    "name": "spm.config.json",
+    "path": "packages/expo-glass-effect/spm.config.json",
+    "sha": "46c7e6410a4cfbaed967815d33e95ae8707efd71",
+    "size": 775,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/spm.config.json?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/spm.config.json",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/46c7e6410a4cfbaed967815d33e95ae8707efd71",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/spm.config.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/spm.config.json?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/46c7e6410a4cfbaed967815d33e95ae8707efd71",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/spm.config.json"
+    }
+  },
+  {
+    "name": "GlassContainer.ios.tsx",
+    "path": "packages/expo-glass-effect/src/GlassContainer.ios.tsx",
+    "sha": "06b27877db3b8212b0cc9e60fd5cdf3a97ee232e",
+    "size": 314,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassContainer.ios.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.ios.tsx",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/06b27877db3b8212b0cc9e60fd5cdf3a97ee232e",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.ios.tsx",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassContainer.ios.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/06b27877db3b8212b0cc9e60fd5cdf3a97ee232e",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.ios.tsx"
+    }
+  },
+  {
+    "name": "GlassContainer.tsx",
+    "path": "packages/expo-glass-effect/src/GlassContainer.tsx",
+    "sha": "316589095c35d312219f77c2d58365d8da9d7c3e",
+    "size": 260,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassContainer.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.tsx",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/316589095c35d312219f77c2d58365d8da9d7c3e",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.tsx",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassContainer.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/316589095c35d312219f77c2d58365d8da9d7c3e",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.tsx"
+    }
+  },
+  {
+    "name": "GlassContainer.types.ts",
+    "path": "packages/expo-glass-effect/src/GlassContainer.types.ts",
+    "sha": "b6abcf257cd341d4f5f05577ea17592d7094e12c",
+    "size": 378,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassContainer.types.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.types.ts",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/b6abcf257cd341d4f5f05577ea17592d7094e12c",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.types.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassContainer.types.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/b6abcf257cd341d4f5f05577ea17592d7094e12c",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.types.ts"
+    }
+  },
+  {
+    "name": "GlassView.ios.tsx",
+    "path": "packages/expo-glass-effect/src/GlassView.ios.tsx",
+    "sha": "874ec03e4c91c6c4775f8c4355186898328b700c",
+    "size": 364,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassView.ios.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.ios.tsx",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/874ec03e4c91c6c4775f8c4355186898328b700c",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.ios.tsx",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassView.ios.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/874ec03e4c91c6c4775f8c4355186898328b700c",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.ios.tsx"
+    }
+  },
+  {
+    "name": "GlassView.tsx",
+    "path": "packages/expo-glass-effect/src/GlassView.tsx",
+    "sha": "07e80711cdff6b77781a4699271bb8ce864f2f17",
+    "size": 240,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassView.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.tsx",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/07e80711cdff6b77781a4699271bb8ce864f2f17",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.tsx",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassView.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/07e80711cdff6b77781a4699271bb8ce864f2f17",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.tsx"
+    }
+  },
+  {
+    "name": "GlassView.types.ts",
+    "path": "packages/expo-glass-effect/src/GlassView.types.ts",
+    "sha": "cc6a58a0fa574b971626a5c6a527ef37984c1832",
+    "size": 1310,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassView.types.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.types.ts",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/cc6a58a0fa574b971626a5c6a527ef37984c1832",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.types.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/GlassView.types.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/cc6a58a0fa574b971626a5c6a527ef37984c1832",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.types.ts"
+    }
+  },
+  {
+    "name": "GlassContainer-test.ios.tsx",
+    "path": "packages/expo-glass-effect/src/__tests__/GlassContainer-test.ios.tsx",
+    "sha": "02dd530c0de84e8128f377ba716832d217ca0706",
+    "size": 606,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/__tests__/GlassContainer-test.ios.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/GlassContainer-test.ios.tsx",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/02dd530c0de84e8128f377ba716832d217ca0706",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/GlassContainer-test.ios.tsx",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/__tests__/GlassContainer-test.ios.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/02dd530c0de84e8128f377ba716832d217ca0706",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/GlassContainer-test.ios.tsx"
+    }
+  },
+  {
+    "name": "GlassView-test.ios.tsx",
+    "path": "packages/expo-glass-effect/src/__tests__/GlassView-test.ios.tsx",
+    "sha": "6457e7c47ace566d7d8f37997814db70c9600d68",
+    "size": 952,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/__tests__/GlassView-test.ios.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/GlassView-test.ios.tsx",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/6457e7c47ace566d7d8f37997814db70c9600d68",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/GlassView-test.ios.tsx",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/__tests__/GlassView-test.ios.tsx?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/6457e7c47ace566d7d8f37997814db70c9600d68",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/GlassView-test.ios.tsx"
+    }
+  },
+  {
+    "name": "GlassContainer-test.ios.tsx.snap.ios",
+    "path": "packages/expo-glass-effect/src/__tests__/__snapshots__/GlassContainer-test.ios.tsx.snap.ios",
+    "sha": "5c1cb36434234549de3f3f52fec7def225f3b81c",
+    "size": 383,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassContainer-test.ios.tsx.snap.ios?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassContainer-test.ios.tsx.snap.ios",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/5c1cb36434234549de3f3f52fec7def225f3b81c",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassContainer-test.ios.tsx.snap.ios",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassContainer-test.ios.tsx.snap.ios?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/5c1cb36434234549de3f3f52fec7def225f3b81c",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassContainer-test.ios.tsx.snap.ios"
+    }
+  },
+  {
+    "name": "GlassView-test.ios.tsx.snap.ios",
+    "path": "packages/expo-glass-effect/src/__tests__/__snapshots__/GlassView-test.ios.tsx.snap.ios",
+    "sha": "97986a07d3929dac2be1e49bc9ff4bbb87b371fb",
+    "size": 1066,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassView-test.ios.tsx.snap.ios?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassView-test.ios.tsx.snap.ios",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/97986a07d3929dac2be1e49bc9ff4bbb87b371fb",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassView-test.ios.tsx.snap.ios",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassView-test.ios.tsx.snap.ios?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/97986a07d3929dac2be1e49bc9ff4bbb87b371fb",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassView-test.ios.tsx.snap.ios"
+    }
+  },
+  {
+    "name": "index.ts",
+    "path": "packages/expo-glass-effect/src/index.ts",
+    "sha": "b4a9957e6d20c79de2909dc2c40c7b5984b12224",
+    "size": 441,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/index.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/index.ts",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/b4a9957e6d20c79de2909dc2c40c7b5984b12224",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/index.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/index.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/b4a9957e6d20c79de2909dc2c40c7b5984b12224",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/index.ts"
+    }
+  },
+  {
+    "name": "isGlassEffectAPIAvailable.ios.ts",
+    "path": "packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ios.ts",
+    "sha": "4b488a2b0be5cae4c5e47a5c7a89c1c5a2aad613",
+    "size": 748,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ios.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ios.ts",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/4b488a2b0be5cae4c5e47a5c7a89c1c5a2aad613",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ios.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ios.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/4b488a2b0be5cae4c5e47a5c7a89c1c5a2aad613",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ios.ts"
+    }
+  },
+  {
+    "name": "isGlassEffectAPIAvailable.ts",
+    "path": "packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ts",
+    "sha": "ad4e8c7770de84a643eb93d8c2b8066be753a7b8",
+    "size": 456,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ts",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/ad4e8c7770de84a643eb93d8c2b8066be753a7b8",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/ad4e8c7770de84a643eb93d8c2b8066be753a7b8",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ts"
+    }
+  },
+  {
+    "name": "isLiquidGlassAvailable.ios.ts",
+    "path": "packages/expo-glass-effect/src/isLiquidGlassAvailable.ios.ts",
+    "sha": "3ef35575de43e377bcc84fa4fe385d58fc6a67b1",
+    "size": 911,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/isLiquidGlassAvailable.ios.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isLiquidGlassAvailable.ios.ts",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/3ef35575de43e377bcc84fa4fe385d58fc6a67b1",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isLiquidGlassAvailable.ios.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/isLiquidGlassAvailable.ios.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/3ef35575de43e377bcc84fa4fe385d58fc6a67b1",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isLiquidGlassAvailable.ios.ts"
+    }
+  },
+  {
+    "name": "isLiquidGlassAvailable.ts",
+    "path": "packages/expo-glass-effect/src/isLiquidGlassAvailable.ts",
+    "sha": "2b406c7f39406fc7b472010131f0ae66be1ed67d",
+    "size": 623,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/isLiquidGlassAvailable.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isLiquidGlassAvailable.ts",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/2b406c7f39406fc7b472010131f0ae66be1ed67d",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isLiquidGlassAvailable.ts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/src/isLiquidGlassAvailable.ts?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/2b406c7f39406fc7b472010131f0ae66be1ed67d",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isLiquidGlassAvailable.ts"
+    }
+  },
+  {
+    "name": "tsconfig.json",
+    "path": "packages/expo-glass-effect/tsconfig.json",
+    "sha": "102c2cd912ede3cd0a083ce692f32b51addc3d8e",
+    "size": 191,
+    "url": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/tsconfig.json?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+    "html_url": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/tsconfig.json",
+    "git_url": "https://api.github.com/repos/expo/expo/git/blobs/102c2cd912ede3cd0a083ce692f32b51addc3d8e",
+    "download_url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/tsconfig.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/expo/expo/contents/packages/expo-glass-effect/tsconfig.json?ref=a6078233c87546c50d56c8bc85f75253a78daed7",
+      "git": "https://api.github.com/repos/expo/expo/git/blobs/102c2cd912ede3cd0a083ce692f32b51addc3d8e",
+      "html": "https://github.com/expo/expo/blob/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/tsconfig.json"
+    }
+  }
+]

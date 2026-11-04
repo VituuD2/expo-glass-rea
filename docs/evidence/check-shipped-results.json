@@ -1,0 +1,26 @@
+﻿{
+  "target": "expo-glass-effect@58.0.5",
+  "node": "v24.18.1",
+  "archive_sha256": "c62fe880a26e761bc3fc6d259e6ab268e293f7344aaaa002389a804a5ec438ee",
+  "scope": "Published JavaScript with synthetic dependency mocks; no React render, Metro, native bridge or UIKit execution",
+  "passed": 17,
+  "checks": [
+    "Archive SHA-512/SHA-1 match npm metadata and package version is 58.0.5",
+    "isLiquidGlassAvailable: generic platform always false",
+    "isLiquidGlassAvailable: lazy access/cache/coercion with true",
+    "isLiquidGlassAvailable: lazy access/cache/coercion with false",
+    "isLiquidGlassAvailable: lazy access/cache/coercion with undefined",
+    "isLiquidGlassAvailable: lazy access/cache/coercion with truthy",
+    "isLiquidGlassAvailable: native lookup errors propagate and are retried on next call",
+    "isGlassEffectAPIAvailable: generic platform always false",
+    "isGlassEffectAPIAvailable: lazy access/cache/coercion with true",
+    "isGlassEffectAPIAvailable: lazy access/cache/coercion with false",
+    "isGlassEffectAPIAvailable: lazy access/cache/coercion with undefined",
+    "isGlassEffectAPIAvailable: lazy access/cache/coercion with truthy",
+    "isGlassEffectAPIAvailable: native lookup errors propagate and are retried on next call",
+    "GlassView: generic wrapper forwards all props/children/ref to View",
+    "GlassView: iOS requests correct native view eagerly; wrapper/export preserved",
+    "GlassContainer: generic wrapper forwards all props/children/ref to View",
+    "GlassContainer: iOS requests correct native view eagerly; wrapper/export preserved"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "collected": "2026-11-04",
+  "host": {
+    "platform": "win32",
+    "architecture": "x64"
+  },
+  "open": false,
+  "server": {
+    "name": "rea-agents",
+    "version": "6.7.0",
+    "root_path": "C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\rea-agents",
+    "build_commit": null
+  },
+  "apple_capabilities": [
+    {
+      "provider": {
+        "id": "native-macos",
+        "name": "macOS native inspection utilities",
+        "version": null
+      },
+      "shared_limitations": [
+        "Availability and textual formats depend on the installed macOS/Xcode toolchain."
+      ],
+      "groups": [
+        {
+          "operations": [
+            "capture_native_ui_scenario",
+            "observe_native_calls"
+          ],
+          "effects": [
+            "launches_process",
+            "may_show_ui",
+            "may_access_network",
+            "may_write_filesystem"
+          ],
+          "limitations": [],
+          "available": false,
+          "reason": "Native macOS utilities require macOS.",
+          "availability_code": "unsupported_host"
+        },
+        {
+          "operations": [
+            "demangle_swift",
+            "inspect_macho",
+            "inspect_plist",
+            "inspect_signature",
+            "list_architectures"
+          ],
+          "effects": [
+            "launches_process"
+          ],
+          "limitations": [],
+          "available": false,
+          "reason": "Native macOS utilities require macOS.",
+          "availability_code": "unsupported_host"
+        },
+        {
+          "operations": [
+            "inspect_native_dispatch_metadata"
+          ],
+          "effects": [],
+          "limitations": [],
+          "available": false,
+          "reason": "Native macOS utilities require macOS.",
+          "availability_code": "unsupported_host"
+        },
+        {
+          "operations": [
+            "observe_native_ui"
+          ],
+          "effects": [
+            "launches_process",
+            "may_write_filesystem"
+          ],
+          "limitations": [],
+          "available": false,
+          "reason": "Native macOS utilities require macOS.",
+          "availability_code": "unsupported_host"
+        }
+      ]
+    }
+  ],
+  "native_execution": false,
+  "native_binary_supplied": false
+}

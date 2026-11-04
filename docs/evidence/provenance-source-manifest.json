@@ -1,0 +1,173 @@
+{
+  "commit": "a6078233c87546c50d56c8bc85f75253a78daed7",
+  "files": [
+    {
+      "path": "packages/expo-glass-effect/.npmignore",
+      "git_blob": "445eee20d8d665d95ccf73e69d244c4741cf0525",
+      "bytes": 766,
+      "sha256": "ea151e35aec0ff36084d9c1c1eaa0595bdf4960d9c814acbb0727f037e32c354"
+    },
+    {
+      "path": "packages/expo-glass-effect/CHANGELOG.md",
+      "git_blob": "d0b4212b273fc01a2d19f772201b04d9f9509e85",
+      "bytes": 7385,
+      "sha256": "d2cade48eef31ef1f6fef4c40a4693b3e3c7a312f44b5fe453722b3f33d3d3da"
+    },
+    {
+      "path": "packages/expo-glass-effect/README.md",
+      "git_blob": "b54d8e873245712da04e732c46c96e98c05d2cf9",
+      "bytes": 1427,
+      "sha256": "0a948561e759f84b1bea2964ac303dfcef73d39bb7f40e34ab17e57447590d06"
+    },
+    {
+      "path": "packages/expo-glass-effect/expo-module.config.json",
+      "git_blob": "906c52e369bd19dc602df9458b6b7fd45903fe2f",
+      "bytes": 101,
+      "sha256": "45deb8681c9b7151a2034069d34241d20932ee3be39d3a4a1e02906dfe333c6b"
+    },
+    {
+      "path": "packages/expo-glass-effect/ios/ExpoGlassEffect.podspec",
+      "git_blob": "419340b6b8e14ace05739e40301ba18c2db0b77c",
+      "bytes": 637,
+      "sha256": "a5501bda5666520f89eb535a3bcdb3d38b013b650c2b6ac652dd9d3205183c8d"
+    },
+    {
+      "path": "packages/expo-glass-effect/ios/GlassContainer.swift",
+      "git_blob": "61fb67cdfa2022f57524ddde05096067055e9ee6",
+      "bytes": 1750,
+      "sha256": "7a677a4ef19ae92adb1e6347aa80381daf458aa1491ff478c5f3c9b3a8ab3e9c"
+    },
+    {
+      "path": "packages/expo-glass-effect/ios/GlassEffectModule.swift",
+      "git_blob": "8420334f1f3ebe1c30779aff0e6af925acf64b24",
+      "bytes": 4133,
+      "sha256": "b0cee18a0f35c6fee9a21124be41e5e6e3859c78ebd8ee6bf5dcc8e399687fc7"
+    },
+    {
+      "path": "packages/expo-glass-effect/ios/GlassStyle.swift",
+      "git_blob": "bfd913cc6ad22d7ec15948901bd15ce377395470",
+      "bytes": 883,
+      "sha256": "d318c53bfbcc0df5f20875105049539447bd71acee6937a2009cdc55b8ccb6d6"
+    },
+    {
+      "path": "packages/expo-glass-effect/ios/GlassView.swift",
+      "git_blob": "862c16a9231450de940024abb051a1d90e1e8eeb",
+      "bytes": 10851,
+      "sha256": "cd14fea49a00c43727bfd8aa670f829b1d41d431f55c35cec1b6fdadf57a8429"
+    },
+    {
+      "path": "packages/expo-glass-effect/oxlint.config.mjs",
+      "git_blob": "dceaedeae018d2e209131feb1832fd18ab503b65",
+      "bytes": 109,
+      "sha256": "3548d4e44f9d773b30199e850859fdcaac4bbe0ffe6e8432f312e2cc2e5875b6"
+    },
+    {
+      "path": "packages/expo-glass-effect/package.json",
+      "git_blob": "bd12a470c0317c286f1f9bd52f28173704f03492",
+      "bytes": 1685,
+      "sha256": "e15414be91963af5fed12c401f548666ce61c10200780e48483e678e95f4772f"
+    },
+    {
+      "path": "packages/expo-glass-effect/spm.config.json",
+      "git_blob": "46c7e6410a4cfbaed967815d33e95ae8707efd71",
+      "bytes": 775,
+      "sha256": "2e751335584d2f3507f41d0536e93658bfffb5ae613b1cc9a8396a813758b498"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassContainer.ios.tsx",
+      "git_blob": "06b27877db3b8212b0cc9e60fd5cdf3a97ee232e",
+      "bytes": 314,
+      "sha256": "a7fac8ac783c3e685f186c81dc2a9cc5d7e3fa9c8bf398ed7c2755ce2509d22e"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassContainer.tsx",
+      "git_blob": "316589095c35d312219f77c2d58365d8da9d7c3e",
+      "bytes": 260,
+      "sha256": "5e90681dc8e650dcbf84abf05318f6cfd3df55e823ac92d163aea2480a1fce6c"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassContainer.types.ts",
+      "git_blob": "b6abcf257cd341d4f5f05577ea17592d7094e12c",
+      "bytes": 378,
+      "sha256": "6e220a52754c13ad05ff9517f0339168342954651635e39d88dc9fdfbcad4a40"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassView.ios.tsx",
+      "git_blob": "874ec03e4c91c6c4775f8c4355186898328b700c",
+      "bytes": 364,
+      "sha256": "cd7d4202c9a4acdaa32f3247561a0075beb7087a3a80549cdeac175122d07a6e"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassView.tsx",
+      "git_blob": "07e80711cdff6b77781a4699271bb8ce864f2f17",
+      "bytes": 240,
+      "sha256": "58baa6036393e68b22536f5bd2b50fa5f5f183f7674956c95537c8be0331df75"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassView.types.ts",
+      "git_blob": "cc6a58a0fa574b971626a5c6a527ef37984c1832",
+      "bytes": 1310,
+      "sha256": "4559e0a84af8f8a818f84511981500d09cc5780e1434038d3156785c8b893222"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/__tests__/GlassContainer-test.ios.tsx",
+      "git_blob": "02dd530c0de84e8128f377ba716832d217ca0706",
+      "bytes": 606,
+      "sha256": "8afedfd833da09c164873680f8f12e698772d7eb6acb54b80d30f12582f17fe4"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/__tests__/GlassView-test.ios.tsx",
+      "git_blob": "6457e7c47ace566d7d8f37997814db70c9600d68",
+      "bytes": 952,
+      "sha256": "8111bc773816420b9f166e373767e47ad235e4ec03f7e9934499eeb935be9612"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/__tests__/__snapshots__/GlassContainer-test.ios.tsx.snap.ios",
+      "git_blob": "5c1cb36434234549de3f3f52fec7def225f3b81c",
+      "bytes": 383,
+      "sha256": "63635e775c66cb5eb7df6e1169ae7da62f47b0e6a36959abcedc0c0baaf2f521"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/__tests__/__snapshots__/GlassView-test.ios.tsx.snap.ios",
+      "git_blob": "97986a07d3929dac2be1e49bc9ff4bbb87b371fb",
+      "bytes": 1066,
+      "sha256": "05e72f3ee2df956141df728395db1b8bd5c627e6e5e364d6358308ca20b792e6"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/index.ts",
+      "git_blob": "b4a9957e6d20c79de2909dc2c40c7b5984b12224",
+      "bytes": 441,
+      "sha256": "3748d913de61f9dc75710c4717de9584563a64912356f13dc72c6640951ff4e7"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ios.ts",
+      "git_blob": "4b488a2b0be5cae4c5e47a5c7a89c1c5a2aad613",
+      "bytes": 748,
+      "sha256": "4526a72374342ed5d4bcbd756828ca42680638a1b57b32d400e7240227bf68c5"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ts",
+      "git_blob": "ad4e8c7770de84a643eb93d8c2b8066be753a7b8",
+      "bytes": 456,
+      "sha256": "eb4aea344aad7eac042294df5cfa474bf7ed52d298314184993feed126e8f01e"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/isLiquidGlassAvailable.ios.ts",
+      "git_blob": "3ef35575de43e377bcc84fa4fe385d58fc6a67b1",
+      "bytes": 911,
+      "sha256": "43f7792bfceb7b0aec1bf79344f63b775525b187412d8faebf4a71095fb31c67"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/isLiquidGlassAvailable.ts",
+      "git_blob": "2b406c7f39406fc7b472010131f0ae66be1ed67d",
+      "bytes": 623,
+      "sha256": "faa51d91be680260415074fbfdb146e6cd671557edb547f2d3ae126956393db4"
+    },
+    {
+      "path": "packages/expo-glass-effect/tsconfig.json",
+      "git_blob": "102c2cd912ede3cd0a083ce692f32b51addc3d8e",
+      "bytes": 191,
+      "sha256": "416d4d64656c2b8be4f04cbb7328f0522dd786d4213e2f710005859732d231e6"
+    }
+  ]
+}

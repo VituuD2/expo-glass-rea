@@ -1,0 +1,257 @@
+{
+  "commit": "a6078233c87546c50d56c8bc85f75253a78daed7",
+  "files": [
+    {
+      "path": ".github/workflows/publish-packages.yml",
+      "bytes": 13290,
+      "sha256": "516ec0fa6d648e977c87c4869177fcfb170abdabebe20a34bfefe4999686eb53",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/.github/workflows/publish-packages.yml"
+    },
+    {
+      "path": "apps/native-component-list/package.json",
+      "bytes": 6414,
+      "sha256": "1242b5a3df0caa4b5f644d58e059c40b305c9b45afa12fd51e0cde469355bca0",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/apps/native-component-list/package.json"
+    },
+    {
+      "path": "apps/native-component-list/src/navigation/componentScreens.ts",
+      "bytes": 8098,
+      "sha256": "9497956bc0eb52b2e0aa140a52c35c63a4efc05df9c7ea7b8830deea600f9498",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/apps/native-component-list/src/navigation/componentScreens.ts"
+    },
+    {
+      "path": "apps/native-component-list/src/navigation/RegistryScreenRoute.tsx",
+      "bytes": 1612,
+      "sha256": "6cd14a71f7468e0f6366ab56be4628c322b98c68079a24dc18eb06271a870240",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/apps/native-component-list/src/navigation/RegistryScreenRoute.tsx"
+    },
+    {
+      "path": "apps/native-component-list/src/navigation/routeBuilder.tsx",
+      "bytes": 902,
+      "sha256": "641d03ff6d92561fe7a3702a4c10b15d9b9d347c421e8086c9d65bb52d43c088",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/apps/native-component-list/src/navigation/routeBuilder.tsx"
+    },
+    {
+      "path": "apps/native-component-list/src/navigation/screenRegistry.ts",
+      "bytes": 1673,
+      "sha256": "785ae9ad6325cb982520b29c54594692e2c72644f3df6ddbffeae3ee69b62a1d",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/apps/native-component-list/src/navigation/screenRegistry.ts"
+    },
+    {
+      "path": "apps/native-component-list/src/screens/GlassView/GlassOpacityAnimationExample.ios.tsx",
+      "bytes": 2374,
+      "sha256": "becce8735c18a6abd3623bc90abe23f32a25b9f35b908fff2282d8f8bac38822",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/apps/native-component-list/src/screens/GlassView/GlassOpacityAnimationExample.ios.tsx"
+    },
+    {
+      "path": "apps/native-component-list/src/screens/GlassView/GlassViewScreen.ios.tsx",
+      "bytes": 12129,
+      "sha256": "220844d3bb897ca269a58c0949382e7db268494568d532e9a8e14460b0067430",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/apps/native-component-list/src/screens/GlassView/GlassViewScreen.ios.tsx"
+    },
+    {
+      "path": "apps/native-component-list/src/screens/GlassView/GlassViewScreen.tsx",
+      "bytes": 327,
+      "sha256": "e3bd53b7110adf43fd7b59159baeb2d9f1023aba8d19fe370dfa20c0e0f4aa2c",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/apps/native-component-list/src/screens/GlassView/GlassViewScreen.tsx"
+    },
+    {
+      "path": "apps/native-component-list/src/screens/UI/GlassEffectScreen.ios.tsx",
+      "bytes": 5497,
+      "sha256": "4b948f568cb914a5d45cdc0048e5b79545c3bcbec9ceb57fc6d55e5b9a7f70c4",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/apps/native-component-list/src/screens/UI/GlassEffectScreen.ios.tsx"
+    },
+    {
+      "path": "docs/pages/versions/unversioned/sdk/glass-effect.mdx",
+      "bytes": 10426,
+      "sha256": "df6cf76b1e814cdb60c06281066cea486a6791b0db31bd4d04aafae2929ff228",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/docs/pages/versions/unversioned/sdk/glass-effect.mdx"
+    },
+    {
+      "path": "docs/pages/versions/v58.0.0/sdk/glass-effect.mdx",
+      "bytes": 10428,
+      "sha256": "1b6d66000226eeb2b045db33e13207ecfe2a14c0f532b425449836cd02bb6758",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/docs/pages/versions/v58.0.0/sdk/glass-effect.mdx"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1106,
+      "sha256": "fb3ca4a837f5779e83cef89b78253a8949cfb9429c340309f62d0465ec6610b4",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/LICENSE"
+    },
+    {
+      "path": "package.json",
+      "bytes": 2136,
+      "sha256": "5135cf784f9bb79002a35ccc6524bdf6ddd4bfb8aa795f6e8d84e219b9019e5b",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/package.json"
+    },
+    {
+      "path": "packages/expo-glass-effect/.npmignore",
+      "bytes": 766,
+      "sha256": "ea151e35aec0ff36084d9c1c1eaa0595bdf4960d9c814acbb0727f037e32c354",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/.npmignore"
+    },
+    {
+      "path": "packages/expo-glass-effect/CHANGELOG.md",
+      "bytes": 7385,
+      "sha256": "d2cade48eef31ef1f6fef4c40a4693b3e3c7a312f44b5fe453722b3f33d3d3da",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/CHANGELOG.md"
+    },
+    {
+      "path": "packages/expo-glass-effect/expo-module.config.json",
+      "bytes": 101,
+      "sha256": "45deb8681c9b7151a2034069d34241d20932ee3be39d3a4a1e02906dfe333c6b",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/expo-module.config.json"
+    },
+    {
+      "path": "packages/expo-glass-effect/ios/ExpoGlassEffect.podspec",
+      "bytes": 637,
+      "sha256": "a5501bda5666520f89eb535a3bcdb3d38b013b650c2b6ac652dd9d3205183c8d",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/ExpoGlassEffect.podspec"
+    },
+    {
+      "path": "packages/expo-glass-effect/ios/GlassContainer.swift",
+      "bytes": 1750,
+      "sha256": "7a677a4ef19ae92adb1e6347aa80381daf458aa1491ff478c5f3c9b3a8ab3e9c",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassContainer.swift"
+    },
+    {
+      "path": "packages/expo-glass-effect/ios/GlassEffectModule.swift",
+      "bytes": 4133,
+      "sha256": "b0cee18a0f35c6fee9a21124be41e5e6e3859c78ebd8ee6bf5dcc8e399687fc7",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassEffectModule.swift"
+    },
+    {
+      "path": "packages/expo-glass-effect/ios/GlassStyle.swift",
+      "bytes": 883,
+      "sha256": "d318c53bfbcc0df5f20875105049539447bd71acee6937a2009cdc55b8ccb6d6",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassStyle.swift"
+    },
+    {
+      "path": "packages/expo-glass-effect/ios/GlassView.swift",
+      "bytes": 10851,
+      "sha256": "cd14fea49a00c43727bfd8aa670f829b1d41d431f55c35cec1b6fdadf57a8429",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/ios/GlassView.swift"
+    },
+    {
+      "path": "packages/expo-glass-effect/oxlint.config.mjs",
+      "bytes": 109,
+      "sha256": "3548d4e44f9d773b30199e850859fdcaac4bbe0ffe6e8432f312e2cc2e5875b6",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/oxlint.config.mjs"
+    },
+    {
+      "path": "packages/expo-glass-effect/package.json",
+      "bytes": 1685,
+      "sha256": "e15414be91963af5fed12c401f548666ce61c10200780e48483e678e95f4772f",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/package.json"
+    },
+    {
+      "path": "packages/expo-glass-effect/README.md",
+      "bytes": 1427,
+      "sha256": "0a948561e759f84b1bea2964ac303dfcef73d39bb7f40e34ab17e57447590d06",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/README.md"
+    },
+    {
+      "path": "packages/expo-glass-effect/spm.config.json",
+      "bytes": 775,
+      "sha256": "2e751335584d2f3507f41d0536e93658bfffb5ae613b1cc9a8396a813758b498",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/spm.config.json"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/__tests__/__snapshots__/GlassContainer-test.ios.tsx.snap.ios",
+      "bytes": 383,
+      "sha256": "63635e775c66cb5eb7df6e1169ae7da62f47b0e6a36959abcedc0c0baaf2f521",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassContainer-test.ios.tsx.snap.ios"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/__tests__/__snapshots__/GlassView-test.ios.tsx.snap.ios",
+      "bytes": 1066,
+      "sha256": "05e72f3ee2df956141df728395db1b8bd5c627e6e5e364d6358308ca20b792e6",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/__snapshots__/GlassView-test.ios.tsx.snap.ios"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/__tests__/GlassContainer-test.ios.tsx",
+      "bytes": 606,
+      "sha256": "8afedfd833da09c164873680f8f12e698772d7eb6acb54b80d30f12582f17fe4",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/GlassContainer-test.ios.tsx"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/__tests__/GlassView-test.ios.tsx",
+      "bytes": 952,
+      "sha256": "8111bc773816420b9f166e373767e47ad235e4ec03f7e9934499eeb935be9612",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/__tests__/GlassView-test.ios.tsx"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassContainer.ios.tsx",
+      "bytes": 314,
+      "sha256": "a7fac8ac783c3e685f186c81dc2a9cc5d7e3fa9c8bf398ed7c2755ce2509d22e",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.ios.tsx"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassContainer.tsx",
+      "bytes": 260,
+      "sha256": "5e90681dc8e650dcbf84abf05318f6cfd3df55e823ac92d163aea2480a1fce6c",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.tsx"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassContainer.types.ts",
+      "bytes": 378,
+      "sha256": "6e220a52754c13ad05ff9517f0339168342954651635e39d88dc9fdfbcad4a40",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassContainer.types.ts"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassView.ios.tsx",
+      "bytes": 364,
+      "sha256": "cd7d4202c9a4acdaa32f3247561a0075beb7087a3a80549cdeac175122d07a6e",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.ios.tsx"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassView.tsx",
+      "bytes": 240,
+      "sha256": "58baa6036393e68b22536f5bd2b50fa5f5f183f7674956c95537c8be0331df75",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.tsx"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/GlassView.types.ts",
+      "bytes": 1310,
+      "sha256": "4559e0a84af8f8a818f84511981500d09cc5780e1434038d3156785c8b893222",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/GlassView.types.ts"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/index.ts",
+      "bytes": 441,
+      "sha256": "3748d913de61f9dc75710c4717de9584563a64912356f13dc72c6640951ff4e7",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/index.ts"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ios.ts",
+      "bytes": 748,
+      "sha256": "4526a72374342ed5d4bcbd756828ca42680638a1b57b32d400e7240227bf68c5",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ios.ts"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ts",
+      "bytes": 456,
+      "sha256": "eb4aea344aad7eac042294df5cfa474bf7ed52d298314184993feed126e8f01e",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isGlassEffectAPIAvailable.ts"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/isLiquidGlassAvailable.ios.ts",
+      "bytes": 911,
+      "sha256": "43f7792bfceb7b0aec1bf79344f63b775525b187412d8faebf4a71095fb31c67",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isLiquidGlassAvailable.ios.ts"
+    },
+    {
+      "path": "packages/expo-glass-effect/src/isLiquidGlassAvailable.ts",
+      "bytes": 623,
+      "sha256": "faa51d91be680260415074fbfdb146e6cd671557edb547f2d3ae126956393db4",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/src/isLiquidGlassAvailable.ts"
+    },
+    {
+      "path": "packages/expo-glass-effect/tsconfig.json",
+      "bytes": 191,
+      "sha256": "416d4d64656c2b8be4f04cbb7328f0522dd786d4213e2f710005859732d231e6",
+      "url": "https://raw.githubusercontent.com/expo/expo/a6078233c87546c50d56c8bc85f75253a78daed7/packages/expo-glass-effect/tsconfig.json"
+    }
+  ]
+}

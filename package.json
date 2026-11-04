@@ -1,0 +1,56 @@
+{
+  "name": "@expo-glass-rea/react",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An evidence-based web adaptation of Expo GlassEffect for React and Next.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build:lib": "tsc -p tsconfig.lib.json && node -e \"require('node:fs').copyFileSync('src/styles.css','dist/styles.css')\"",
+    "build:demo": "vite build",
+    "build": "npm run build:lib && npm run build:demo",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "node --test tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "test": "npm run build:lib && npm run test:unit && npm run test:e2e",
+    "build:next": "next build tests/next-app --webpack",
+    "dev:next": "next dev tests/next-app --webpack -H 127.0.0.1 -p 4174"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0 <20",
+    "react-dom": ">=18.2.0 <20"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,198 @@
+[
+  {
+    "path": ".npmignore",
+    "published": false,
+    "same_bytes": null,
+    "repo_sha256": "ea151e35aec0ff36084d9c1c1eaa0595bdf4960d9c814acbb0727f037e32c354",
+    "package_sha256": null
+  },
+  {
+    "path": "CHANGELOG.md",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "d2cade48eef31ef1f6fef4c40a4693b3e3c7a312f44b5fe453722b3f33d3d3da",
+    "package_sha256": "d2cade48eef31ef1f6fef4c40a4693b3e3c7a312f44b5fe453722b3f33d3d3da"
+  },
+  {
+    "path": "expo-module.config.json",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "45deb8681c9b7151a2034069d34241d20932ee3be39d3a4a1e02906dfe333c6b",
+    "package_sha256": "45deb8681c9b7151a2034069d34241d20932ee3be39d3a4a1e02906dfe333c6b"
+  },
+  {
+    "path": "ios/ExpoGlassEffect.podspec",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "a5501bda5666520f89eb535a3bcdb3d38b013b650c2b6ac652dd9d3205183c8d",
+    "package_sha256": "a5501bda5666520f89eb535a3bcdb3d38b013b650c2b6ac652dd9d3205183c8d"
+  },
+  {
+    "path": "ios/GlassContainer.swift",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "7a677a4ef19ae92adb1e6347aa80381daf458aa1491ff478c5f3c9b3a8ab3e9c",
+    "package_sha256": "7a677a4ef19ae92adb1e6347aa80381daf458aa1491ff478c5f3c9b3a8ab3e9c"
+  },
+  {
+    "path": "ios/GlassEffectModule.swift",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "b0cee18a0f35c6fee9a21124be41e5e6e3859c78ebd8ee6bf5dcc8e399687fc7",
+    "package_sha256": "b0cee18a0f35c6fee9a21124be41e5e6e3859c78ebd8ee6bf5dcc8e399687fc7"
+  },
+  {
+    "path": "ios/GlassStyle.swift",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "d318c53bfbcc0df5f20875105049539447bd71acee6937a2009cdc55b8ccb6d6",
+    "package_sha256": "d318c53bfbcc0df5f20875105049539447bd71acee6937a2009cdc55b8ccb6d6"
+  },
+  {
+    "path": "ios/GlassView.swift",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "cd14fea49a00c43727bfd8aa670f829b1d41d431f55c35cec1b6fdadf57a8429",
+    "package_sha256": "cd14fea49a00c43727bfd8aa670f829b1d41d431f55c35cec1b6fdadf57a8429"
+  },
+  {
+    "path": "oxlint.config.mjs",
+    "published": false,
+    "same_bytes": null,
+    "repo_sha256": "3548d4e44f9d773b30199e850859fdcaac4bbe0ffe6e8432f312e2cc2e5875b6",
+    "package_sha256": null
+  },
+  {
+    "path": "package.json",
+    "published": true,
+    "same_bytes": false,
+    "repo_sha256": "e15414be91963af5fed12c401f548666ce61c10200780e48483e678e95f4772f",
+    "package_sha256": "b6dcc6477dc842dbab46af47c74e09fa16b8994d7b69427be3826cb77efacbcd"
+  },
+  {
+    "path": "README.md",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "0a948561e759f84b1bea2964ac303dfcef73d39bb7f40e34ab17e57447590d06",
+    "package_sha256": "0a948561e759f84b1bea2964ac303dfcef73d39bb7f40e34ab17e57447590d06"
+  },
+  {
+    "path": "spm.config.json",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "2e751335584d2f3507f41d0536e93658bfffb5ae613b1cc9a8396a813758b498",
+    "package_sha256": "2e751335584d2f3507f41d0536e93658bfffb5ae613b1cc9a8396a813758b498"
+  },
+  {
+    "path": "src/__tests__/__snapshots__/GlassContainer-test.ios.tsx.snap.ios",
+    "published": false,
+    "same_bytes": null,
+    "repo_sha256": "63635e775c66cb5eb7df6e1169ae7da62f47b0e6a36959abcedc0c0baaf2f521",
+    "package_sha256": null
+  },
+  {
+    "path": "src/__tests__/__snapshots__/GlassView-test.ios.tsx.snap.ios",
+    "published": false,
+    "same_bytes": null,
+    "repo_sha256": "05e72f3ee2df956141df728395db1b8bd5c627e6e5e364d6358308ca20b792e6",
+    "package_sha256": null
+  },
+  {
+    "path": "src/__tests__/GlassContainer-test.ios.tsx",
+    "published": false,
+    "same_bytes": null,
+    "repo_sha256": "8afedfd833da09c164873680f8f12e698772d7eb6acb54b80d30f12582f17fe4",
+    "package_sha256": null
+  },
+  {
+    "path": "src/__tests__/GlassView-test.ios.tsx",
+    "published": false,
+    "same_bytes": null,
+    "repo_sha256": "8111bc773816420b9f166e373767e47ad235e4ec03f7e9934499eeb935be9612",
+    "package_sha256": null
+  },
+  {
+    "path": "src/GlassContainer.ios.tsx",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "a7fac8ac783c3e685f186c81dc2a9cc5d7e3fa9c8bf398ed7c2755ce2509d22e",
+    "package_sha256": "a7fac8ac783c3e685f186c81dc2a9cc5d7e3fa9c8bf398ed7c2755ce2509d22e"
+  },
+  {
+    "path": "src/GlassContainer.tsx",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "5e90681dc8e650dcbf84abf05318f6cfd3df55e823ac92d163aea2480a1fce6c",
+    "package_sha256": "5e90681dc8e650dcbf84abf05318f6cfd3df55e823ac92d163aea2480a1fce6c"
+  },
+  {
+    "path": "src/GlassContainer.types.ts",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "6e220a52754c13ad05ff9517f0339168342954651635e39d88dc9fdfbcad4a40",
+    "package_sha256": "6e220a52754c13ad05ff9517f0339168342954651635e39d88dc9fdfbcad4a40"
+  },
+  {
+    "path": "src/GlassView.ios.tsx",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "cd7d4202c9a4acdaa32f3247561a0075beb7087a3a80549cdeac175122d07a6e",
+    "package_sha256": "cd7d4202c9a4acdaa32f3247561a0075beb7087a3a80549cdeac175122d07a6e"
+  },
+  {
+    "path": "src/GlassView.tsx",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "58baa6036393e68b22536f5bd2b50fa5f5f183f7674956c95537c8be0331df75",
+    "package_sha256": "58baa6036393e68b22536f5bd2b50fa5f5f183f7674956c95537c8be0331df75"
+  },
+  {
+    "path": "src/GlassView.types.ts",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "4559e0a84af8f8a818f84511981500d09cc5780e1434038d3156785c8b893222",
+    "package_sha256": "4559e0a84af8f8a818f84511981500d09cc5780e1434038d3156785c8b893222"
+  },
+  {
+    "path": "src/index.ts",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "3748d913de61f9dc75710c4717de9584563a64912356f13dc72c6640951ff4e7",
+    "package_sha256": "3748d913de61f9dc75710c4717de9584563a64912356f13dc72c6640951ff4e7"
+  },
+  {
+    "path": "src/isGlassEffectAPIAvailable.ios.ts",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "4526a72374342ed5d4bcbd756828ca42680638a1b57b32d400e7240227bf68c5",
+    "package_sha256": "4526a72374342ed5d4bcbd756828ca42680638a1b57b32d400e7240227bf68c5"
+  },
+  {
+    "path": "src/isGlassEffectAPIAvailable.ts",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "eb4aea344aad7eac042294df5cfa474bf7ed52d298314184993feed126e8f01e",
+    "package_sha256": "eb4aea344aad7eac042294df5cfa474bf7ed52d298314184993feed126e8f01e"
+  },
+  {
+    "path": "src/isLiquidGlassAvailable.ios.ts",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "43f7792bfceb7b0aec1bf79344f63b775525b187412d8faebf4a71095fb31c67",
+    "package_sha256": "43f7792bfceb7b0aec1bf79344f63b775525b187412d8faebf4a71095fb31c67"
+  },
+  {
+    "path": "src/isLiquidGlassAvailable.ts",
+    "published": true,
+    "same_bytes": true,
+    "repo_sha256": "faa51d91be680260415074fbfdb146e6cd671557edb547f2d3ae126956393db4",
+    "package_sha256": "faa51d91be680260415074fbfdb146e6cd671557edb547f2d3ae126956393db4"
+  },
+  {
+    "path": "tsconfig.json",
+    "published": false,
+    "same_bytes": null,
+    "repo_sha256": "416d4d64656c2b8be4f04cbb7328f0522dd786d4213e2f710005859732d231e6",
+    "package_sha256": null
+  }
+]
