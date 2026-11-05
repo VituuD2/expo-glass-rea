@@ -1,0 +1,39 @@
+{
+  "path": "docs/references/WhatsApp Video 2026-11-04 at 7.58.14 PM.mp4",
+  "sha256": "f7f81ac1806a902063ffd3141651e33575736580b01ed78cb53a3bb28c7f8e1c",
+  "width": 848,
+  "height": 192,
+  "duration": 22.543333,
+  "samples": [
+    0.1,
+    2.917916625,
+    5.73583325,
+    8.553749875,
+    11.3716665,
+    14.189583125,
+    17.00749975,
+    19.825416375000003
+  ],
+  "diagnostics": {
+    "activeRenderer": "webgl2",
+    "fallbackReason": "explicit-source",
+    "devicePixelRatio": 1,
+    "canvasPixelWidth": 346,
+    "canvasPixelHeight": 296,
+    "source": {
+      "type": "HTMLCanvasElement",
+      "width": 996,
+      "height": 510
+    },
+    "stats": {
+      "frames": 6,
+      "uploads": 2,
+      "cpuMs": 0.20000000298023224,
+      "pixelRatio": 1,
+      "estimatedBytes": 2441504,
+      "shapes": 1
+    },
+    "context": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+  },
+  "limitation": "WhatsApp-compressed reference; qualitative shape/motion observation only. Sampling times are seek requests, not asserted original-frame timestamps. Initial renderer diagnostics are preserved on rerun."
+}

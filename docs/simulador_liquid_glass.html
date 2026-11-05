@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Optics Lab — Simulador de Liquid Glass</title>
+<style>
+:root{color-scheme:dark;--bg:#090d17;--panel:#111727;--line:#2a3446;--text:#f6f7fd;--sub:#94a0b7;--cyan:#a2f8ee;--violet:#b9a8ff;--muted:#64748b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse 65% 65% at 70% -30%,#273456 0%,transparent 80%),#090d17;color:var(--text);font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.page{width:min(1500px,calc(100% - 52px));margin:0 auto;padding:27px 0 48px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:0 1px 22px;border-bottom:1px solid #ffffff19;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;letter-spacing:.18em;font-size:12px;font-weight:800}.brandmark{width:34px;height:34px;position:relative;border:1px solid #b4c5ec66;border-radius:13px;background:linear-gradient(135deg,#ffffff55,#ffffff08);box-shadow:inset 0 1px 8px #ffffff5e,0 0 20px #96b7ff22}.brandmark:before{content:"";position:absolute;width:15px;height:15px;border:1px solid #fff9;left:8px;top:8px;border-radius:6px;transform:rotate(35deg)}
+.topright{display:flex;align-items:center;gap:15px;color:#adb9ce;font-size:11px;letter-spacing:.1em}.status{display:flex;gap:8px;align-items:center;border:1px solid #ffffff2a;border-radius:999px;padding:7px 12px;background:#ffffff08}.dot{width:7px;height:7px;background:#8bffdb;box-shadow:0 0 9px #8bffdb;border-radius:50%}.mini{color:#8390aa}
+.heading{display:flex;align-items:end;justify-content:space-between;gap:24px;padding:37px 2px 28px}.eyebrow{color:var(--cyan);font-weight:800;font-size:10px;letter-spacing:.23em;margin-bottom:13px}.heading h1{font-size:clamp(30px,3.5vw,54px);line-height:1.09;letter-spacing:-.055em;margin:0;font-weight:750;max-width:800px}.heading h1 em{font-style:normal;background:linear-gradient(95deg,#aef9e8,#c1b1ff);background-clip:text;-webkit-background-clip:text;color:transparent}.heading p{color:var(--sub);max-width:650px;margin:13px 0 0;font-size:14px}.math-mark{color:#9faad0;font:italic 22px Georgia,serif;white-space:nowrap;padding-bottom:10px}
+.workspace{display:grid;grid-template-columns:minmax(0,1.85fr) minmax(310px,.85fr);gap:18px;align-items:start}
+.stagebox,.controls,.explain{background:linear-gradient(145deg,#151d2d,#101626);border:1px solid #ffffff19;border-radius:21px;box-shadow:0 18px 50px #0000002b;overflow:hidden}
+.stage-head{height:59px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;border-bottom:1px solid #ffffff17;gap:14px}.stage-name{font-size:11px;font-weight:750;letter-spacing:.13em}.stage-name span{color:#64748b;font-weight:500;padding-left:11px;letter-spacing:0}.stage-actions{display:flex;gap:6px}.seg{border:1px solid #ffffff26;padding:7px 11px;background:transparent;color:#aeb9cc;border-radius:8px;font:inherit;font-size:11px;cursor:pointer;transition:.2s}.seg.active{background:#ffffff1c;color:#fff;border-color:#ffffff5c}.seg:hover{border-color:#fff8}
+.stage{height:clamp(350px,42vw,570px);min-height:350px;position:relative;overflow:hidden;cursor:grab;touch-action:none;background:#1b243d}.stage:active{cursor:grabbing}#glcanvas{position:absolute;width:100%;height:100%;display:block;inset:0}.glass-copy{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;gap:16px;pointer-events:none;white-space:nowrap;text-shadow:0 1px 8px #131e427f;filter:drop-shadow(0 1px 4px #080d172c)}.glass-copy span{font-size:clamp(14px,1.5vw,20px);font-weight:650;letter-spacing:-.035em}.glass-copy .arrow{display:grid;place-items:center;width:36px;height:36px;border:1px solid #ffffff74;background:#ffffff23;border-radius:50%;font-size:19px}.glass-copy.round{flex-direction:column;gap:4px}.glass-copy.round span{font-size:12px}.stage-float{position:absolute;bottom:19px;left:22px;border-radius:8px;background:#0b1022a6;border:1px solid #ffffff27;backdrop-filter:blur(10px);font-size:10px;color:#dce7ff;letter-spacing:.08em;padding:9px 11px;pointer-events:none}.stage-float b{color:var(--cyan)}.stage-chip{position:absolute;right:21px;top:20px;display:flex;align-items:center;gap:7px;background:#050b1b68;border:1px solid #ffffff2e;color:#deeafc;border-radius:100px;padding:7px 11px;font-size:10px;pointer-events:none}.stage-chip:before{content:"";width:6px;height:6px;border-radius:50%;background:#a6fee3;box-shadow:0 0 9px #a6fee3}
+.stage-foot{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:15px 20px;color:var(--sub);font-size:11px;line-height:1.4}.stage-foot strong{color:#e3ecfc;font-weight:500}.help-icon{font-size:15px;color:var(--cyan)}
+.right{display:flex;flex-direction:column;gap:17px}.controls{padding:22px}.sectionhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}.sectionhead h2,.explain h2{font-size:13px;letter-spacing:.005em;font-weight:750;margin:0}.sectionhead .tiny{font-size:10px;color:#a2f8ee;padding:5px 9px;border:1px solid #a2f8ee33;background:#a2f8ee0d;border-radius:100px}.control{margin-bottom:21px}.control:last-of-type{margin-bottom:17px}.control-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:7px}.control label{font-size:11px;color:#dce4f5;font-weight:600}.control output{font-size:11px;color:var(--cyan);font-variant-numeric:tabular-nums;font-weight:650}.control .hint{font-size:10px;color:#7888a4;margin-top:5px;min-height:15px}.range{width:100%;height:5px;appearance:none;-webkit-appearance:none;background:linear-gradient(90deg,#9ff3e9 var(--fill,50%),#3b4357 var(--fill,50%));border-radius:20px;outline:0;cursor:pointer;display:block;margin:11px 0 0}.range::-webkit-slider-thumb{appearance:none;width:15px;height:15px;border:3px solid #a9ffed;background:#173b48;border-radius:50%;box-shadow:0 0 0 3px #a9ffed1d}.range::-moz-range-thumb{width:10px;height:10px;border:3px solid #a9ffed;background:#173b48;border-radius:50%}
+.control-divider{height:1px;background:#ffffff19;margin:19px 0}.group-label{font-size:10px;font-weight:750;color:#8998b3;letter-spacing:.13em;margin-bottom:10px}.choose{display:flex;gap:7px}.choose button{cursor:pointer;flex:1;background:#ffffff08;border:1px solid #ffffff21;padding:9px 4px;color:#a1aec5;border-radius:8px;font-size:11px}.choose button.selected{border-color:#9cf7e985;background:#84f9e815;color:#eafffa}.checks{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px}.checks label{color:#dbe4f4;font-size:11px;cursor:pointer;display:flex;align-items:center;gap:7px}.checks input{accent-color:#8cecd9}.reset{cursor:pointer;border:0;background:transparent;color:#9cf2e5;font:inherit;font-size:10px}
+.explain{padding:20px 22px 18px}.diagram{width:100%;height:135px;display:block;margin:10px 0 5px;border-radius:9px;background:#0b1220}.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.metric{background:#ffffff09;border:1px solid #ffffff14;border-radius:10px;padding:10px 12px}.metric .v{font-size:21px;letter-spacing:-.04em;font-weight:650;color:#f5f9ff;font-variant-numeric:tabular-nums}.metric .k{font-size:9px;color:#8fa1bc;text-transform:uppercase;letter-spacing:.09em;margin-top:3px}.formula{font:italic 15px Georgia,serif;color:#c9dbf8;margin:13px 0 0;text-align:center}.footnote{color:#7687a2;font-size:10px;line-height:1.7;margin-top:15px}.bottom{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:18px}.info{padding:15px;border:1px solid #ffffff14;background:#ffffff07;border-radius:13px}.info b{color:#e4f0fe;font-size:12px}.info p{margin:6px 0 0;color:#8e9cb4;font-size:11px;line-height:1.6}.small-heading{color:#8ff5e3;font-size:9px;letter-spacing:.16em;margin-bottom:6px;font-weight:800}
+@media(max-width:1050px){.workspace{grid-template-columns:minmax(0,1fr) 320px}.page{width:calc(100% - 28px)}.stage{height:470px}.bottom{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:820px){.workspace{grid-template-columns:1fr}.right{display:grid;grid-template-columns:1fr 1fr}.stage{height:430px}.heading{padding-top:25px}.bottom{grid-template-columns:1fr}.math-mark{display:none}}
+@media(max-width:600px){.page{width:calc(100% - 20px);padding-top:13px}.topright .mini{display:none}.heading h1{font-size:33px}.heading{padding:28px 2px 22px}.stage-head{padding:0 12px;gap:6px}.stage-name{font-size:10px}.stage-name span{display:none}.stage-actions{gap:3px}.seg{font-size:10px;padding:6px}.stage{height:405px}.stage-foot{padding:13px}.right{display:flex}.glass-copy span{font-size:14px}.bottom{gap:9px}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="top"><div class="brand"><div class="brandmark"></div> OPTICS LAB <span style="font-weight:400;color:#6e7a96;letter-spacing:0">/ 01</span></div><div class="topright"><span class="mini">MATERIAL EXPERIMENTAL</span><div class="status"><span class="dot"></span><span id="render-status">WEBGL · ATIVO</span></div></div></header>
+<section class="heading"><div><div class="eyebrow">SIMULADOR DE ÓPTICA INTERATIVO</div><h1>O vidro não borra.<br><em>Ele dobra a luz.</em></h1><p>Uma interpretação matemática do Liquid Glass. Arraste a lente pela cena, altere o índice de refração e observe como os pixels se deslocam em tempo real.</p></div><div class="math-mark">n₁ sin θ₁ = n₂ sin θ₂</div></section>
+<main class="workspace"><div class="stagebox">
+<div class="stage-head"><div class="stage-name">AMBIENTE DE TESTE <span>Arraste o vidro para explorar</span></div><div class="stage-actions" id="backgrounds"><button class="seg active" data-background="editorial">Editorial</button><button class="seg" data-background="grid">Grade</button><button class="seg" data-background="interface">Interface</button></div></div>
+<div class="stage" id="stage"><canvas id="glcanvas"></canvas><div id="glass-copy" class="glass-copy"><span>Explorar coleção</span><div class="arrow">↗</div></div><div class="stage-chip">REFRAÇÃO EM TEMPO REAL</div><div class="stage-float"><b>↔</b> ARRASTE O VIDRO &nbsp; · &nbsp; <b>●</b> ALTERE OS PARÂMETROS</div></div>
+<div class="stage-foot"><span><span class="help-icon">✦</span> <strong>Observação:</strong> repare nas letras e linhas atravessando as bordas do vidro.</span><span id="fps">GPU · WebGL</span></div>
+</div><div class="right"><section class="controls">
+<div class="sectionhead"><h2>Propriedades do material</h2><span class="tiny">AO VIVO</span></div>
+<div class="control"><div class="control-head"><label for="ior">Índice de refração (n)</label><output id="ior-v">1,48</output></div><input class="range" id="ior" type="range" min="1" max="1.85" step="0.01" value="1.48"/><div class="hint">Ar = 1,00 · vidro comum ≈ 1,50</div></div>
+<div class="control"><div class="control-head"><label for="thick">Espessura / curvatura</label><output id="thick-v">1,00×</output></div><input class="range" id="thick" type="range" min="0.1" max="2.2" step="0.01" value="1"/><div class="hint">Altera o desvio óptico projetado</div></div>
+<div class="control"><div class="control-head"><label for="blur">Desfoque de fundo</label><output id="blur-v">2,0 px</output></div><input class="range" id="blur" type="range" min="0" max="12" step="0.5" value="2"/><div class="hint">Suaviza a imagem sem criar refração</div></div>
+<div class="control"><div class="control-head"><label for="reflect">Reflexos e brilho</label><output id="reflect-v">75%</output></div><input class="range" id="reflect" type="range" min="0" max="1.5" step="0.05" value="0.75"/><div class="hint">Fresnel, iluminação de borda e brilho</div></div>
+<div class="control"><div class="control-head"><label for="chromatic">Dispersão cromática</label><output id="chromatic-v">30%</output></div><input class="range" id="chromatic" type="range" min="0" max="1" step="0.05" value="0.3"/><div class="hint">Desvio sutil de cores nas bordas</div></div>
+<div class="control-divider"></div><div class="group-label">GEOMETRIA DO VIDRO</div><div class="choose" id="shapes"><button data-shape="pill" class="selected">Cápsula</button><button data-shape="card">Cartão</button><button data-shape="circle">Círculo</button></div>
+<div class="checks"><label><input id="debug" type="checkbox"/> Ver mapa de distorção</label><button class="reset" id="reset">↺ Restaurar</button></div>
+</section><section class="explain"><h2>O que acontece com a luz?</h2><canvas class="diagram" id="diagram"></canvas><div class="metric-grid"><div class="metric"><div class="v" id="angle">23,0°</div><div class="k">Ângulo refratado</div></div><div class="metric"><div class="v" id="fresnel">3,7%</div><div class="k">Reflexão em incidência normal</div></div></div><div class="formula">n₁ sin θ₁ = n₂ sin θ₂</div><div class="footnote">Simulação educacional baseada em Snell, Fresnel e deslocamento de textura por normais aproximadas. Não representa o algoritmo privado do iOS.</div></section></div></main>
+<section class="bottom"><div class="info"><div class="small-heading">01 / DESFOQUE</div><b>Misturar pixels</b><p>O blur suaviza o conteúdo atrás da superfície, mas sozinho não altera sua geometria.</p></div><div class="info"><div class="small-heading">02 / REFRAÇÃO</div><b>Deslocar a amostragem</b><p>Normais curvas e o índice óptico determinam de onde cada pixel do fundo será lido.</p></div><div class="info"><div class="small-heading">03 / FRESNEL</div><b>Refletir nas bordas</b><p>Reflexos mais fortes nos ângulos rasantes ajudam a criar a sensação de volume.</p></div></section>
+</div>
+<script>
+(function(){'use strict';
+const $=id=>document.getElementById(id), stage=$('stage'), canvas=$('glcanvas'), copy=$('glass-copy');
+let mode='editorial', shape='pill', dragging=false, pointerDelta=[0,0], center=[.52,.48], dims=[1,1], dpi=1, program=null, gl=null, tex=null, error=false;
+const state={ior:1.48,thick:1,blur:2,reflect:.75,chromatic:.3,debug:false};
+const vs=`#version 300 es
+layout(location=0) in vec2 a_position;
+void main(){gl_Position=vec4(a_position,0.0,1.0);}`;
+const fs=`#version 300 es
+precision highp float;
+uniform sampler2D u_bg;
+uniform vec2 u_size,u_center,u_lens;
+uniform float u_dpi,u_ior,u_thickness,u_blur,u_reflect,u_dispersion,u_time,u_radius;
+uniform int u_debug;
+out vec4 fragColor;
+float sdRoundRect(vec2 p,vec2 b,float r){vec2 q=abs(p)-b+vec2(r);return length(max(q,0.0))+min(max(q.x,q.y),0.0)-r;}
+float distanceGlass(vec2 p){return sdRoundRect(p-u_center,u_lens*0.5,u_radius);}
+float heightGlass(vec2 p){float d=distanceGlass(p);float inset=max(-d,0.0);float edge=smoothstep(0.0,30.0,inset);vec2 q=(p-u_center)/(u_lens*.5);float bulge=1.0-.14*min(dot(q,q),1.4);return edge*bulge;}
+vec3 source(vec2 p){return texture(u_bg,clamp(p/u_size,vec2(0.001),vec2(.999))).rgb;}
+vec3 blurSample(vec2 p,float blur){vec3 c=source(p)*.36;vec2 o=vec2(max(blur,0.0));c+=source(p+vec2(o.x,0.0))*.13;c+=source(p-vec2(o.x,0.0))*.13;c+=source(p+vec2(0.0,o.y))*.13;c+=source(p-vec2(0.0,o.y))*.13;c+=source(p+o*.7)*.06;c+=source(p-o*.7)*.06;return c;}
+void main(){
+ vec2 pos=vec2(gl_FragCoord.x,u_size.y*u_dpi-gl_FragCoord.y)/u_dpi;
+ float d=distanceGlass(pos);
+ vec3 original=source(pos);
+ // Ambient soft shadow extends beyond the glass boundary.
+ float shadowD=distanceGlass(pos-vec2(4.0,9.0));
+ float shadow=(1.0-smoothstep(-3.0,25.0,shadowD))*.18*(1.0-smoothstep(-2.0,1.0,-d));
+ original*=1.0-shadow;
+ if(d>2.0){fragColor=vec4(original,1.0);return;}
+ float eps=1.4;
+ float sx=(heightGlass(pos+vec2(eps,0.0))-heightGlass(pos-vec2(eps,0.0)))/(2.0*eps);
+ float sy=(heightGlass(pos+vec2(0.0,eps))-heightGlass(pos-vec2(0.0,eps)))/(2.0*eps);
+ vec3 normal=normalize(vec3(-sx*19.0,-sy*19.0,1.0));
+ vec3 incident=vec3(0.0,0.0,-1.0);
+ vec3 refracted=refract(incident,normal,1.0/u_ior);
+ vec2 displacement=refracted.xy/max(0.35,-refracted.z)*u_thickness*75.0;
+ vec2 q=(pos-u_center)/(u_lens*.5);
+ displacement-=q*(u_ior-1.0)*u_thickness*3.0;
+ displacement=clamp(displacement,vec2(-43.0),vec2(43.0));
+ float disp=u_dispersion*(.6+length(displacement)*.075);
+ vec3 color=blurSample(pos+displacement,u_blur);
+ if(u_dispersion>.001){
+   vec2 dir=normalize(displacement+vec2(.0001));
+   color.r=blurSample(pos+displacement+dir*disp,u_blur).r;
+   color.b=blurSample(pos+displacement-dir*disp,u_blur).b;
+ }
+ float edge=1.0-smoothstep(0.0,24.0,max(-d,0.0));
+ float NdotV=clamp(normal.z,0.0,1.0);
+ float f0=pow((u_ior-1.0)/(u_ior+1.0),2.0);
+ float fresnel=f0+(1.0-f0)*pow(1.0-NdotV,5.0);
+ float upper=clamp(dot(normalize(normal.xy+vec2(.00001)),normalize(vec2(-.6,-.8))),0.0,1.0);
+ float lower=clamp(dot(normalize(normal.xy+vec2(.00001)),normalize(vec2(.55,.85))),0.0,1.0);
+ float spec=pow(upper,3.0)*edge*.53+pow(lower,5.0)*edge*.16;
+ float glint=pow(max(0.0,1.0-abs((pos.x-u_center.x)/(u_lens.x*.5)-.13)),15.0)*edge*.11*(.7+.3*sin(u_time*.55));
+ vec3 lit=vec3(.8,.94,1.0)*(edge*.14+fresnel*.31+spec+glint)*u_reflect;
+ color=mix(color,color*.95+vec3(.045,.08,.13),.12);
+ color+=lit;
+ color-=vec3(.035,.042,.075)*edge*(1.0-upper)*u_reflect;
+ if(u_debug==1){
+  vec3 mapColor=vec3(.10+.5*clamp(displacement.x/35.0+.5,0.0,1.0),.1+.8*clamp(length(displacement)/37.0,0.0,1.0),.15+.65*clamp(displacement.y/35.0+.5,0.0,1.0));
+  color=mix(mapColor,vec3(1.0),edge*.12);
+ }
+ float alpha=1.0-smoothstep(-1.1,1.1,d);
+ fragColor=vec4(mix(original,color,alpha),1.0);
+}`;
+function shader(type,source){let sh=gl.createShader(type);gl.shaderSource(sh,source);gl.compileShader(sh);if(!gl.getShaderParameter(sh,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(sh));return sh;}
+function init(){try{gl=canvas.getContext('webgl2',{alpha:false,antialias:true,premultipliedAlpha:false,preserveDrawingBuffer:true});if(!gl)throw Error('WebGL2 indisponível');program=gl.createProgram();gl.attachShader(program,shader(gl.VERTEX_SHADER,vs));gl.attachShader(program,shader(gl.FRAGMENT_SHADER,fs));gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));gl.useProgram(program);let buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);gl.enableVertexAttribArray(0);gl.vertexAttribPointer(0,2,gl.FLOAT,false,0,0);tex=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,tex);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.uniform1i(gl.getUniformLocation(program,'u_bg'),0);}catch(e){error=true;console.error(e);$('render-status').textContent='CPU · REFRAÇÃO';$('fps').textContent='CPU · Canvas 2D';fallbackInit();}}
+const backdrop=document.createElement('canvas');const b=backdrop.getContext('2d');let fallbackSource=null;
+function rounded(x,y,w,h,r){b.beginPath();b.roundRect(x,y,w,h,r)}
+function gradientCircle(x,y,r,stops){const g=b.createRadialGradient(x,y,0,x,y,r);stops.forEach(a=>g.addColorStop(a[0],a[1]));b.fillStyle=g;b.fillRect(x-r,y-r,r*2,r*2)}
+function backdropDraw(){fallbackSource=null;const W=dims[0],H=dims[1],s=Math.min(2,dpi);backdrop.width=Math.floor(W*s);backdrop.height=Math.floor(H*s);b.setTransform(s,0,0,s,0,0);b.clearRect(0,0,W,H);
+ if(mode==='editorial'){
+   let bg=b.createLinearGradient(0,0,W,H);bg.addColorStop(0,'#091528');bg.addColorStop(.52,'#25254c');bg.addColorStop(1,'#170e28');b.fillStyle=bg;b.fillRect(0,0,W,H);
+   gradientCircle(W*.83,H*.33,H*.75,[[0,'#dc657f99'],[.38,'#8755bf59'],[1,'#8b4fa500']]);gradientCircle(W*.25,H*.92,H*.65,[[0,'#008fa17a'],[.5,'#235bb83d'],[1,'#3563af00']]);
+   b.lineWidth=.65;for(let x=0;x<W;x+=26){b.strokeStyle='#ffffff12';b.beginPath();b.moveTo(x,0);b.lineTo(x,H);b.stroke()}for(let y=0;y<H;y+=26){b.beginPath();b.moveTo(0,y);b.lineTo(W,y);b.stroke()}
+   b.fillStyle='#b1e5ffb0';b.font='600 11px system-ui';b.fillText('MATERIAL STUDIES  /  ISSUE 026',36,47);b.textAlign='right';b.fillText('DESIGN × LIGHT',W-36,47);b.textAlign='left';
+   b.save();b.translate(W*.82,H*.49);for(let i=0;i<7;i++){b.rotate(.24);b.strokeStyle=`rgba(255,230,240,${.12+i*.042})`;b.lineWidth=1.7;b.beginPath();b.ellipse(0,0,W*.15+i*10,H*.23+i*10,.3,0,Math.PI*2);b.stroke()}b.restore();
+   let font=Math.min(W*.134,122);b.font=`850 ${font}px system-ui,sans-serif`;b.fillStyle='#ffffffed';b.letterSpacing='-4px';b.fillText('LIGHT',W*.085,H*.48);b.fillStyle='#c7f8f2eb';b.fillText('MATTER.',W*.085,H*.66);b.letterSpacing='0px';
+   b.fillStyle='#fefeffa8';b.font='500 11px system-ui';b.fillText('EXPLORING OPTICAL MATERIALS',W*.09,H*.75);b.fillStyle='#fefeff65';b.fillText('VOL. 02   /   REFRACTIVE OBJECTS',W*.09,H*.79);
+   b.fillStyle='#ffd9c8ab';b.fillRect(W*.08,H*.845,W*.4,1);b.fillStyle='#c5e8edb8';b.font='10px monospace';b.fillText('01 ── PHOTONIC EXPERIMENT',W*.08,H*.895);
+ }else if(mode==='grid'){
+   b.fillStyle='#f4f4f0';b.fillRect(0,0,W,H);
+   let spacing=26;for(let x=0;x<W;x+=spacing){b.beginPath();b.moveTo(x,0);b.lineTo(x,H);b.strokeStyle=x%130===0?'#52616a78':'#3a495d32';b.lineWidth=x%130===0?1.4:.8;b.stroke()}for(let y=0;y<H;y+=spacing){b.beginPath();b.moveTo(0,y);b.lineTo(W,y);b.strokeStyle=y%130===0?'#52616a78':'#3a495d32';b.lineWidth=y%130===0?1.4:.8;b.stroke()}
+   b.strokeStyle='#ee5c6f';b.lineWidth=2;b.beginPath();b.moveTo(W*.2,H*.5);b.lineTo(W*.83,H*.5);b.moveTo(W*.5,H*.11);b.lineTo(W*.5,H*.9);b.stroke();b.strokeStyle='#184b79';b.lineWidth=1.5;for(let rad of [50,95,150,220]){b.beginPath();b.arc(W*.5,H*.5,rad,0,6.283);b.stroke()}
+   b.fillStyle='#162d40';b.font='800 32px system-ui';b.fillText('OPTICAL GRID',25,60);b.font='12px monospace';b.fillText('DISTORTION FIELD  /  26 PX',25,H-26);b.textAlign='right';b.fillText('X →',W-26,H-26);b.textAlign='left';
+ }else{
+   let g=b.createLinearGradient(0,0,W,H);g.addColorStop(0,'#d5deeb');g.addColorStop(1,'#a1b0c9');b.fillStyle=g;b.fillRect(0,0,W,H);
+   b.fillStyle='#0c1b2d';rounded(22,24,W-44,H-48,24);b.fill();b.fillStyle='#17283d';rounded(43,67,W-86,H-110,13);b.fill();b.fillStyle='#dce4f2';b.font='bold 13px system-ui';b.fillText('NORTH / STUDIO',57,52);b.fillStyle='#a0b5cf';b.font='11px system-ui';b.fillText('Explore   Collections   Journal',W*.54,51);
+   b.fillStyle='#9caed0';b.font='bold 12px system-ui';b.fillText('CURATED COLLECTION  /  2026',74,112);b.fillStyle='#eef4fc';b.font=`800 ${Math.min(70,W*.085)}px system-ui`;b.fillText('SIMPLICITY',73,H*.43);b.fillText('IN MOTION.',73,H*.58);
+   gradientCircle(W*.80,H*.51,H*.33,[[0,'#ffcdabff'],[.3,'#b98ac5eb'],[.7,'#526ca76e'],[1,'#43558700']]);b.fillStyle='#ffffff37';rounded(72,H*.67,W*.42,H*.14,14);b.fill();b.strokeStyle='#ffffff5b';b.stroke();b.fillStyle='#e9f1fa';b.font='500 12px system-ui';b.fillText('A new dimension of visual material',92,H*.73);b.font='10px system-ui';b.fillText('DISCOVER MORE    ↗',92,H*.78);
+ }
+ if(gl&&!error){gl.bindTexture(gl.TEXTURE_2D,tex);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,backdrop);}}
+function lensConfig(){const W=dims[0],H=dims[1];if(shape==='pill')return [Math.min(W*.55,390),Math.min(H*.25,148),Math.min(H*.125,74)];if(shape==='card')return [Math.min(W*.52,385),Math.min(H*.42,220),27];let d=Math.min(W*.39,H*.55,265);return [d,d,d*.5]}
+function positionLabel(){let [W,H]=dims;copy.style.left=(center[0]*W)+'px';copy.style.top=(center[1]*H)+'px';copy.classList.toggle('round',shape==='circle');copy.innerHTML=shape==='circle'?'<span>EXPLORE</span><div class="arrow">↗</div>':'<span>Explorar coleção</span><div class="arrow">↗</div>'}
+function resize(){let rect=stage.getBoundingClientRect();dims=[rect.width,rect.height];dpi=Math.min(window.devicePixelRatio||1,1.8);canvas.width=Math.round(dims[0]*dpi);canvas.height=Math.round(dims[1]*dpi);if(gl&&!error)gl.viewport(0,0,canvas.width,canvas.height);backdropDraw();positionLabel();}
+let locations={};function uniform(name,type,val){let loc=locations[name];if(loc===undefined){loc=gl.getUniformLocation(program,'u_'+name);locations[name]=loc}if(type==='f')gl.uniform1f(loc,val);else if(type==='i')gl.uniform1i(loc,val);else gl.uniform2f(loc,val[0],val[1])}
+function render(t){const W=dims[0],H=dims[1],cfg=lensConfig();if(gl&&!error){gl.useProgram(program);uniform('size','v',[W,H]);uniform('center','v',[center[0]*W,center[1]*H]);uniform('lens','v',[cfg[0],cfg[1]]);uniform('radius','f',cfg[2]);uniform('dpi','f',dpi);uniform('ior','f',state.ior);uniform('thickness','f',state.thick);uniform('blur','f',state.blur);uniform('reflect','f',state.reflect);uniform('dispersion','f',state.chromatic);uniform('time','f',t*.001);uniform('debug','i',state.debug?1:0);gl.drawArrays(gl.TRIANGLES,0,3)}else{fallbackDraw(t)}requestAnimationFrame(render)}
+let fb=null,fc=null;function fallbackInit(){fb=document.createElement('canvas');fb.style.cssText='position:absolute;inset:0;width:100%;height:100%;pointer-events:none';stage.insertBefore(fb,copy);fc=fb.getContext('2d')}
+let fallbackLast=0;
+function fallbackDraw(t){
+ // CPU fallback: apply a Snell-inspired displacement field to the image pixels.
+ if(t-fallbackLast<36)return;
+ fallbackLast=t;
+ if(!fc)return;
+ const W=Math.round(dims[0]),H=Math.round(dims[1]);
+ if(fb.width!==W||fb.height!==H){fb.width=W;fb.height=H}
+ fc.setTransform(1,0,0,1,0,0);fc.clearRect(0,0,W,H);fc.drawImage(backdrop,0,0,W,H);
+ if(!fallbackSource)fallbackSource=b.getImageData(0,0,backdrop.width,backdrop.height).data;let src=fallbackSource;
+ const scaleX=backdrop.width/W,scaleY=backdrop.height/H;
+ const cfg=lensConfig(),cx=center[0]*W,cy=center[1]*H,rx=cfg[0]*.5,ry=cfg[1]*.5,r=cfg[2];
+ const x0=Math.max(0,Math.floor(cx-rx-3)),y0=Math.max(0,Math.floor(cy-ry-3)),x1=Math.min(W,Math.ceil(cx+rx+3)),y1=Math.min(H,Math.ceil(cy+ry+3));
+ const wi=x1-x0,hi=y1-y0;
+ if(wi<=0||hi<=0)return;
+ // Soft contact shadow around the transparent surface.
+ fc.save();fc.beginPath();fc.roundRect(cx-rx,cy-ry,cfg[0],cfg[1],r);fc.shadowColor='rgba(0,0,0,.42)';fc.shadowBlur=20;fc.shadowOffsetY=9;fc.fillStyle='rgba(15,30,55,.10)';fc.fill();fc.restore();
+ const image=fc.getImageData(x0,y0,wi,hi),data=image.data;
+ const dist=(x,y)=>{const xx=Math.abs(x-cx)-rx+r,yy=Math.abs(y-cy)-ry+r;return Math.hypot(Math.max(xx,0),Math.max(yy,0))+Math.min(Math.max(xx,yy),0)-r};
+ const h=(x,y)=>{const d=dist(x,y),inset=Math.max(-d,0),st=Math.max(0,Math.min(1,inset/30)),edge=st*st*(3-2*st),qx=(x-cx)/rx,qy=(y-cy)/ry;return edge*(1-.14*Math.min(qx*qx+qy*qy,1.4))};
+ const bgwidth=backdrop.width,bgheight=backdrop.height;
+ function sampleIndex(x,y){let ix=Math.max(0,Math.min(bgwidth-1,Math.round(x*scaleX))),iy=Math.max(0,Math.min(bgheight-1,Math.round(y*scaleY)));return (iy*bgwidth+ix)*4}
+ const ior=state.ior,eta=1/ior,thick=state.thick,blur=state.blur,reflect=state.reflect,dispersion=state.chromatic;
+ const f0=Math.pow((ior-1)/(ior+1),2);
+ for(let y=y0;y<y1;y++)for(let x=x0;x<x1;x++){
+  const d=dist(x+.5,y+.5);if(d>1.1)continue;
+  const px=x+.5,py=y+.5;
+  let nx=-(h(px+1.4,py)-h(px-1.4,py))/2.8*19,ny=-(h(px,py+1.4)-h(px,py-1.4))/2.8*19;
+  let norm=Math.hypot(nx,ny,1);nx/=norm;ny/=norm;let nz=1/norm;
+  const k=Math.max(0,1-eta*eta*(1-nz*nz)),a=-eta*nz+Math.sqrt(k),tz=-eta-a*nz;
+  let dx=(-a*nx)/Math.max(.35,-tz)*thick*75,dy=(-a*ny)/Math.max(.35,-tz)*thick*75;
+  dx-=(px-cx)/rx*(ior-1)*thick*3;dy-=(py-cy)/ry*(ior-1)*thick*3;
+  dx=Math.max(-43,Math.min(43,dx));dy=Math.max(-43,Math.min(43,dy));
+  const X=px+dx,Y=py+dy,main=sampleIndex(X,Y),m1=sampleIndex(X+blur,Y),m2=sampleIndex(X-blur,Y),m3=sampleIndex(X,Y+blur),m4=sampleIndex(X,Y-blur);
+  const len=Math.hypot(dx,dy)||1,chrom=dispersion*(.6+len*.075),red=sampleIndex(X+dx/len*chrom,Y+dy/len*chrom),blue=sampleIndex(X-dx/len*chrom,Y-dy/len*chrom);
+  const edge=1-Math.max(0,Math.min(1,(-d)/24)),upper=Math.max(0,(-nx*.6-ny*.8)),lower=Math.max(0,(nx*.55+ny*.85));
+  const fre=f0+(1-f0)*Math.pow(1-nz,5),spec=Math.pow(upper,3)*edge*.53+Math.pow(lower,5)*edge*.16;
+  const light=(edge*.14+fre*.31+spec)*reflect,alpha=Math.max(0,Math.min(1,(1.1-d)/2.2)),o=((y-y0)*wi+(x-x0))*4;
+  for(let c=0;c<3;c++){
+   const base=src[main+c]*.48+(src[m1+c]+src[m2+c]+src[m3+c]+src[m4+c])*.13;
+   let value=base*.90+ [11,17,27][c]*.10+255*light*[.8,.94,1][c];
+   if(c===0)value=value*(1-dispersion*.22)+src[red+c]*dispersion*.22;
+   if(c===2)value=value*(1-dispersion*.22)+src[blue+c]*dispersion*.22;
+   if(state.debug)value=[60+dx*3,45+Math.hypot(dx,dy)*6,80+dy*3][c];
+   data[o+c]=Math.round(data[o+c]*(1-alpha)+Math.max(0,Math.min(255,value))*alpha);
+  }
+  data[o+3]=255;
+ }
+ fc.putImageData(image,x0,y0);
+ fc.beginPath();fc.roundRect(cx-rx+.8,cy-ry+.8,cfg[0]-1.6,cfg[1]-1.6,r);fc.lineWidth=1.35;fc.strokeStyle=`rgba(232,250,255,${.15+reflect*.43})`;fc.stroke();
+}
+function bindControls(){const props=[['ior','ior',v=>v.toFixed(2).replace('.',',')],['thick','thick',v=>v.toFixed(2).replace('.',',')+'×'],['blur','blur',v=>v.toFixed(1).replace('.',',')+' px'],['reflect','reflect',v=>Math.round(v*100)+'%'],['chromatic','chromatic',v=>Math.round(v*100)+'%']];props.forEach(([id,key,fmt])=>{let el=$(id);function update(){state[key]=Number(el.value);$(id+'-v').textContent=fmt(state[key]);el.style.setProperty('--fill',100*(state[key]-Number(el.min))/(Number(el.max)-Number(el.min))+'%');updateDiagram()}el.addEventListener('input',update);update()});$('debug').addEventListener('change',e=>state.debug=e.target.checked);$('reset').addEventListener('click',()=>{for(const [id,key] of props){$(id).value={ior:1.48,thick:1,blur:2,reflect:.75,chromatic:.3}[key];$(id).dispatchEvent(new Event('input'))}$('debug').checked=false;state.debug=false;center=[.52,.48];selectShape('pill');positionLabel()})}
+function selectShape(v){shape=v;document.querySelectorAll('#shapes button').forEach(el=>el.classList.toggle('selected',el.dataset.shape===v));positionLabel()}
+document.querySelectorAll('#shapes button').forEach(el=>el.addEventListener('click',()=>selectShape(el.dataset.shape)));
+document.querySelectorAll('#backgrounds button').forEach(el=>el.addEventListener('click',()=>{mode=el.dataset.background;document.querySelectorAll('#backgrounds button').forEach(x=>x.classList.toggle('active',x===el));backdropDraw()}));
+function localEvent(e){let r=stage.getBoundingClientRect();return [e.clientX-r.left,e.clientY-r.top]}
+stage.addEventListener('pointerdown',e=>{let p=localEvent(e),cfg=lensConfig();let dx=p[0]-center[0]*dims[0],dy=p[1]-center[1]*dims[1];if(Math.abs(dx)<cfg[0]/2+22&&Math.abs(dy)<cfg[1]/2+22){dragging=true;pointerDelta=[dx,dy];stage.setPointerCapture(e.pointerId)}else{dragging=true;pointerDelta=[0,0];center=[p[0]/dims[0],p[1]/dims[1]];stage.setPointerCapture(e.pointerId)}positionLabel()});
+stage.addEventListener('pointermove',e=>{if(!dragging)return;const p=localEvent(e),cfg=lensConfig();const x=(p[0]-pointerDelta[0])/dims[0],y=(p[1]-pointerDelta[1])/dims[1];center=[Math.max(cfg[0]/dims[0]*.25,Math.min(1-cfg[0]/dims[0]*.25,x)),Math.max(cfg[1]/dims[1]*.35,Math.min(1-cfg[1]/dims[1]*.35,y))];positionLabel()});for(const evt of ['pointerup','pointercancel','lostpointercapture'])stage.addEventListener(evt,()=>dragging=false);
+function updateDiagram(){let cvs=$('diagram'),rect=cvs.getBoundingClientRect();let W=Math.max(240,rect.width),H=135,dpr=Math.min(window.devicePixelRatio||1,2);cvs.width=W*dpr;cvs.height=H*dpr;let c=cvs.getContext('2d');c.setTransform(dpr,0,0,dpr,0,0);c.clearRect(0,0,W,H);let x1=W*.34,x2=W*.65,y1=H*.5,theta1=35*Math.PI/180,theta2=Math.asin(Math.sin(theta1)/state.ior),dx=x2-x1,y2=y1+dx*Math.tan(theta2);
+ c.fillStyle='#14344a';c.fillRect(x1,5,x2-x1,H-10);c.strokeStyle='#4ec1e075';c.strokeRect(x1,5,x2-x1,H-10);c.setLineDash([3,5]);c.strokeStyle='#b7c4d866';c.beginPath();c.moveTo(0,y1);c.lineTo(W,y1);c.stroke();c.setLineDash([]);
+ c.lineWidth=2.4;c.strokeStyle='#ffc68f';c.beginPath();c.moveTo(x1-60,y1-60*Math.tan(theta1));c.lineTo(x1,y1);c.stroke();c.strokeStyle='#9bf3e1';c.beginPath();c.moveTo(x1,y1);c.lineTo(x2,y2);c.stroke();c.strokeStyle='#ffc68f';c.beginPath();c.moveTo(x2,y2);c.lineTo(Math.min(W-8,x2+52),y2+52*Math.tan(theta1));c.stroke();
+ for(let p of [[x1,y1],[x2,y2]]){c.fillStyle='#ffffff';c.beginPath();c.arc(p[0],p[1],3,0,7);c.fill()}
+ c.font='11px ui-monospace,monospace';c.fillStyle='#9db1c9';c.fillText('AR · n=1',12,14);c.fillStyle='#9bf3e1';c.fillText('n='+state.ior.toFixed(2),x1+9,14);c.fillStyle='#ffceaa';c.fillText('35°',x1-38,y1-8);c.fillStyle='#a6fae8';c.fillText((theta2*180/Math.PI).toFixed(1)+'°',x1+12,y1+23);
+ $('angle').textContent=(theta2*180/Math.PI).toFixed(1).replace('.',',')+'°';const f0=Math.pow((state.ior-1)/(state.ior+1),2);$('fresnel').textContent=(f0*100).toFixed(1).replace('.',',')+'%';}
+init();bindControls();resize();new ResizeObserver(resize).observe(stage);requestAnimationFrame(render);
+})();
+</script>
+</body>
+</html>

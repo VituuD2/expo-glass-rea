@@ -1,0 +1,225 @@
+{
+  "capturedAt": "2026-11-04T22:15:17.815Z",
+  "platform": "win32 10.0.26200 x64",
+  "cpu": "Intel(R) Core(TM) i5-9400 CPU @ 2.90GHz",
+  "browser": "156.0.8078.4",
+  "methodology": "Headless Chromium; 40 warmup RAFs then 120 sampled RAF intervals. CPU includes DOM measurement/upload submission; asynchronous GPU queries exclude uploads/composition. No total-frame GPU guarantee. Source is redrawn on canvas and uploaded only after notification. High quality; automatic quality scaling disabled.",
+  "cases": [
+    {
+      "dpr": 1,
+      "requestedGroupShapes": 2,
+      "actualGroupShapes": 2,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "frameIntervalMs": {
+        "count": 119,
+        "p50": 33.29999999999973,
+        "p95": 33.40000000000009,
+        "max": 50
+      },
+      "lensCpuMs": {
+        "count": 120,
+        "p50": 2.0999999940395355,
+        "p95": 3.0999999940395355,
+        "max": 4.4000000059604645
+      },
+      "groupCpuMs": {
+        "count": 120,
+        "p50": 2.3999999910593033,
+        "p95": 4.200000002980232,
+        "max": 6.5
+      },
+      "lensGpuMs": {
+        "count": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "groupGpuMs": {
+        "count": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "estimatedBytes": 5213952,
+      "idleDrawsOver250ms": {
+        "lens": 0,
+        "group": 0
+      }
+    },
+    {
+      "dpr": 1,
+      "requestedGroupShapes": 16,
+      "actualGroupShapes": 16,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "frameIntervalMs": {
+        "count": 119,
+        "p50": 83.29999999999927,
+        "p95": 100,
+        "max": 116.70000000000073
+      },
+      "lensCpuMs": {
+        "count": 120,
+        "p50": 2.5999999940395355,
+        "p95": 4.799999997019768,
+        "max": 7.4000000059604645
+      },
+      "groupCpuMs": {
+        "count": 120,
+        "p50": 2.7000000029802322,
+        "p95": 4.4000000059604645,
+        "max": 6.4000000059604645
+      },
+      "lensGpuMs": {
+        "count": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "groupGpuMs": {
+        "count": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "estimatedBytes": 5213952,
+      "idleDrawsOver250ms": {
+        "lens": 0,
+        "group": 0
+      }
+    },
+    {
+      "dpr": 2,
+      "requestedGroupShapes": 2,
+      "actualGroupShapes": 2,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "frameIntervalMs": {
+        "count": 119,
+        "p50": 99.89999999999964,
+        "p95": 116.69999999999982,
+        "max": 133.1999999999989
+      },
+      "lensCpuMs": {
+        "count": 120,
+        "p50": 6.899999991059303,
+        "p95": 9.399999991059303,
+        "max": 10.700000002980232
+      },
+      "groupCpuMs": {
+        "count": 120,
+        "p50": 6.299999997019768,
+        "p95": 9.5,
+        "max": 13.400000005960464
+      },
+      "lensGpuMs": {
+        "count": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "groupGpuMs": {
+        "count": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "estimatedBytes": 20855808,
+      "idleDrawsOver250ms": {
+        "lens": 0,
+        "group": 0
+      }
+    },
+    {
+      "dpr": 2,
+      "requestedGroupShapes": 16,
+      "actualGroupShapes": 16,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "frameIntervalMs": {
+        "count": 119,
+        "p50": 283.40000000000146,
+        "p95": 349.90000000000146,
+        "max": 366.6999999999971
+      },
+      "lensCpuMs": {
+        "count": 120,
+        "p50": 10.599999994039536,
+        "p95": 20.900000005960464,
+        "max": 35.79999999701977
+      },
+      "groupCpuMs": {
+        "count": 120,
+        "p50": 10.200000002980232,
+        "p95": 14.5,
+        "max": 17.200000002980232
+      },
+      "lensGpuMs": {
+        "count": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "groupGpuMs": {
+        "count": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "estimatedBytes": 20855808,
+      "idleDrawsOver250ms": {
+        "lens": 0,
+        "group": 0
+      }
+    }
+  ],
+  "adaptiveCase": {
+    "dpr": 2,
+    "requestedGroupShapes": 16,
+    "actualGroupShapes": 16,
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "frameIntervalMs": {
+      "count": 119,
+      "p50": 16.69999999999891,
+      "p95": 33.399999999999636,
+      "max": 100
+    },
+    "lensCpuMs": {
+      "count": 4,
+      "p50": 9,
+      "p95": 9.600000008940697,
+      "max": 9.600000008940697
+    },
+    "groupCpuMs": {
+      "count": 4,
+      "p50": 9.5,
+      "p95": 10.200000002980232,
+      "max": 10.200000002980232
+    },
+    "lensGpuMs": {
+      "count": 0,
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "groupGpuMs": {
+      "count": 0,
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "estimatedBytes": 17404992,
+    "idleDrawsOver250ms": {
+      "lens": 0,
+      "group": 0
+    },
+    "capturedAt": "2026-11-04T22:26:51.521Z",
+    "activePaths": [
+      {
+        "renderer": "css",
+        "reason": "performance-budget"
+      },
+      {
+        "renderer": "css",
+        "reason": "performance-budget"
+      }
+    ]
+  }
+}

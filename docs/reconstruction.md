@@ -32,3 +32,7 @@ Preservar nomes de componentes/helpers, props de material, filhos, mudanças de 
 | [F20](reverse-engineering-report.md#f20) | Internos UIKit não disponíveis | Material CSS/SVG aproximado, sem reprodução dos shaders Apple | Aparência web validada; pixels iOS pendentes |
 
 Resultados, comandos e diferenças finais serão registrados após implementação e testes.
+
+## Evolução óptica (2026-11-04)
+
+A implementação preserva este caminho CSS/SVG e acrescenta um renderer WebGL2 opcional, carregado sob demanda, sobre uma fonte de fundo explícita. A matriz anterior registra a reconstrução inicial, não refração do DOM. O trabalho atual está na [matriz de baseline](optical-feature-matrix.md), [investigação UIKit](uikit-renderer-study.md), [derivação matemática](optical-rendering-model.md), [arquitetura](web-renderer-architecture.md) e [fidelidade e validação](liquid-glass-fidelity.md). O laboratório está em `/lab`; auditoria e simulador fornecidos pelo usuário foram preservados.

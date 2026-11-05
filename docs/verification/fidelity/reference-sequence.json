@@ -1,0 +1,85 @@
+{
+  "method": "20 consecutive requestVideoFrameCallback deliveries after seeking to 2.8 s; original aspect ratio retained. presentedFrames can audit skipped display deliveries.",
+  "samples": [
+    {
+      "mediaTime": 2.81,
+      "presentedFrames": 3
+    },
+    {
+      "mediaTime": 2.826667,
+      "presentedFrames": 4
+    },
+    {
+      "mediaTime": 2.843333,
+      "presentedFrames": 5
+    },
+    {
+      "mediaTime": 2.86,
+      "presentedFrames": 6
+    },
+    {
+      "mediaTime": 2.876667,
+      "presentedFrames": 7
+    },
+    {
+      "mediaTime": 2.893333,
+      "presentedFrames": 8
+    },
+    {
+      "mediaTime": 2.926667,
+      "presentedFrames": 10
+    },
+    {
+      "mediaTime": 2.943333,
+      "presentedFrames": 11
+    },
+    {
+      "mediaTime": 2.96,
+      "presentedFrames": 12
+    },
+    {
+      "mediaTime": 2.976667,
+      "presentedFrames": 13
+    },
+    {
+      "mediaTime": 2.993333,
+      "presentedFrames": 14
+    },
+    {
+      "mediaTime": 3.01,
+      "presentedFrames": 15
+    },
+    {
+      "mediaTime": 3.026667,
+      "presentedFrames": 16
+    },
+    {
+      "mediaTime": 3.043333,
+      "presentedFrames": 17
+    },
+    {
+      "mediaTime": 3.06,
+      "presentedFrames": 18
+    },
+    {
+      "mediaTime": 3.076667,
+      "presentedFrames": 19
+    },
+    {
+      "mediaTime": 3.093333,
+      "presentedFrames": 20
+    },
+    {
+      "mediaTime": 3.11,
+      "presentedFrames": 21
+    },
+    {
+      "mediaTime": 3.126667,
+      "presentedFrames": 22
+    },
+    {
+      "mediaTime": 3.143333,
+      "presentedFrames": 23
+    }
+  ]
+}

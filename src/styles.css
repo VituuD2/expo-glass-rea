@@ -45,7 +45,7 @@
     -webkit-backdrop-filter: blur(18px) saturate(160%);
     backdrop-filter: blur(18px) saturate(160%);
   }
-  .glass-view[data-glass-style='clear'] .glass-view__effect {
+  .glass-view[data-glass-style='clear'] > .glass-view__effect {
     background: rgb(255 255 255 / .09);
     -webkit-backdrop-filter: blur(5px) saturate(125%);
     backdrop-filter: blur(5px) saturate(125%);
@@ -95,8 +95,21 @@
     --glass-edge: light-dark(rgb(255 255 255 / .7), rgb(255 255 255 / .24));
     --glass-fallback: light-dark(#f1f3f5, #202b35);
   }
-  .glass-view[data-glass-style='clear'] .glass-view__effect { background: light-dark(rgb(255 255 255 / .09), rgb(13 23 34 / .15)); }
+  .glass-view[data-glass-style='clear'] > .glass-view__effect { background: light-dark(rgb(255 255 255 / .09), rgb(13 23 34 / .15)); }
   .glass-container__material { background: light-dark(rgb(255 255 255 / .4), rgb(37 49 63 / .5)); }
+}
+
+/* GPU pixels are decorative siblings; content, selection and focus stay in the DOM. */
+.glass-optical-slot { display: contents; }
+.glass-optical-canvas { position: absolute; pointer-events: none; z-index: -1; display: none; }
+.glass-view[data-glass-renderer='webgl2'] > .glass-optical-slot > .glass-optical-canvas,
+.glass-container[data-glass-renderer='webgl2'] > .glass-optical-slot > .glass-optical-canvas { display: block; }
+.glass-view[data-glass-renderer='webgl2'] > .glass-view__effect { visibility: hidden; }
+.glass-container:has(> .glass-optical-slot) { z-index: 0; }
+.glass-view[data-glass-interactive='true']:focus-within { outline: 2px solid Highlight; outline-offset: 3px; }
+@media (prefers-reduced-transparency: reduce), (forced-colors: active) {
+  .glass-optical-canvas { display: none !important; }
+  .glass-view[data-glass-renderer='webgl2'] > .glass-view__effect { visibility: visible; }
 }
 @media (prefers-reduced-motion: reduce) {
   .glass-view__effect { transition-duration: 0s !important; }

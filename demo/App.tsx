@@ -75,7 +75,7 @@ export function App() {
   return <>
     <a className="skip-link" href="#playground">Skip to playground</a>
     <header className="site-header"><a href="#" className="brand" aria-label="Liquid home"><span className="brand-mark"><Icon name="layers" size={19} /></span>liquid<span className="brand-dot">.</span></a>
-      <nav aria-label="Main"><a className="nav-active" href="#playground">Playground</a><a href="#use-it">Use in your app <span aria-hidden="true">↗</span></a></nav>
+      <nav aria-label="Main"><a className="nav-active" href="#playground">Playground</a><a href="/lab">Optical lab ↗</a><a href="#use-it">Use in your app <span aria-hidden="true">↗</span></a></nav>
       <span className="header-tag">A material, reimagined</span>
     </header>
     <main>

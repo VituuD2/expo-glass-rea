@@ -1,21 +1,26 @@
 'use client';
 
-import { forwardRef, useEffect, useId, useImperativeHandle, useRef, useState } from 'react';
+import { forwardRef, useCallback, useEffect, useId, useImperativeHandle, useRef, useState } from 'react';
 import { roundedPath, type GlassShape } from './geometry.js';
 import type { GlassContainerProps } from './types.js';
+import { OpticalLayer, SharedOpticalContext } from './OpticalLayer.js';
 
 export const GlassContainer = forwardRef<HTMLDivElement, GlassContainerProps>(function GlassContainer({
-  spacing = 20, className = '', children, ...props
+  spacing = 20, className = '', children,
+  renderingMode = 'auto', backgroundSource, refractionStrength, opticalThickness, surfaceRoughness,
+  adaptiveLighting, opticalOptions, onRenderStats, ...props
 }, ref) {
   const root = useRef<HTMLDivElement>(null);
   useImperativeHandle(ref, () => root.current!, []);
   const id = `glass-${useId().replace(/[^a-zA-Z0-9_-]/g, '')}`;
   const [shapes, setShapes] = useState<GlassShape[]>([]);
+  const [optical, setOptical] = useState({ active: false, reason: 'no-source' });
+  const onStatus = useCallback((active: boolean, reason: string) => setOptical(current => current.active === active && current.reason === reason ? current : { active, reason }), []);
   const influence = typeof spacing === 'number' && Number.isFinite(spacing) ? Math.max(0, spacing) : 20;
 
   useEffect(() => {
     const element = root.current;
-    if (!element || influence === 0) { setShapes([]); return; }
+    if (!element || influence === 0 || optical.active) { setShapes([]); return; }
     let frame = 0;
     const measure = () => {
       frame = 0;
@@ -51,11 +56,12 @@ export const GlassContainer = forwardRef<HTMLDivElement, GlassContainerProps>(fu
     window.addEventListener('resize', schedule);
     observeSizes();
     return () => { resize.disconnect(); mutations.disconnect(); cancelAnimationFrame(frame); window.removeEventListener('resize', schedule); };
-  }, [influence]);
+  }, [influence, optical.active]);
 
   return <div {...props} ref={root} className={`glass-container ${className}`.trim()}
-    data-glass-container="" data-glass-spacing={influence}>
-    {influence > 0 && <>
+    data-glass-container="" data-glass-spacing={influence}
+    data-glass-renderer={optical.active ? 'webgl2' : 'css'} data-glass-renderer-reason={optical.reason}>
+    {influence > 0 && !optical.active && <>
       <svg aria-hidden="true" className="glass-container__defs" width="100%" height="100%">
         <defs>
           {/* shortcut: SVG approximates native fusion for axis-aligned scalar radii; use a compositor for rotated/elliptical surfaces. */}
@@ -70,6 +76,7 @@ export const GlassContainer = forwardRef<HTMLDivElement, GlassContainerProps>(fu
       </svg>
       <span aria-hidden="true" className="glass-container__material" style={{ mask: `url(#${id})`, WebkitMask: `url(#${id})` }} />
     </>}
-    {children}
+    {backgroundSource && <OpticalLayer host={root} group options={{ renderingMode, backgroundSource, refractionStrength, opticalThickness, surfaceRoughness, adaptiveLighting, opticalOptions, onRenderStats }} onStatus={onStatus} />}
+    <SharedOpticalContext.Provider value={optical.active}>{children}</SharedOpticalContext.Provider>
   </div>;
 });

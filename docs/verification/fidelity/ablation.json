@@ -1,0 +1,30 @@
+[
+  {
+    "mode": "full",
+    "renderer": "webgl2",
+    "filter": "linear",
+    "p50": 33.30000000000018,
+    "p95": 50
+  },
+  {
+    "mode": "no-spectrum",
+    "renderer": "webgl2",
+    "filter": "linear",
+    "p50": 33.30000000000018,
+    "p95": 50.100000000000364
+  },
+  {
+    "mode": "no-scattering",
+    "renderer": "webgl2",
+    "filter": "linear",
+    "p50": 33.30000000000018,
+    "p95": 50
+  },
+  {
+    "mode": "no-reflection",
+    "renderer": "webgl2",
+    "filter": "linear",
+    "p50": 33.30000000000109,
+    "p95": 50
+  }
+]

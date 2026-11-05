@@ -1,0 +1,23 @@
+{
+  "frames": 4,
+  "uploads": 2,
+  "cpuMs": 0.4000000059604645,
+  "pixelRatio": 1,
+  "estimatedBytes": 3118784,
+  "shapes": 1,
+  "textureFiltering": "mipmap",
+  "activeRenderer": "webgl2",
+  "fallbackReason": "explicit-source",
+  "devicePixelRatio": 1,
+  "effectiveRenderScale": 1,
+  "canvasPixelWidth": 346,
+  "canvasPixelHeight": 296,
+  "backgroundSourceType": "HTMLCanvasElement",
+  "backgroundSourceValid": true,
+  "shaderCompilationStatus": "compiled",
+  "qualityLevel": "high",
+  "sourcePixelWidth": 996,
+  "sourcePixelHeight": 510,
+  "uploadCpuMs": 0,
+  "motionEnergy": 0.003727032164287578
+}

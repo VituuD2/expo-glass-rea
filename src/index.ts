@@ -4,4 +4,6 @@ export { isGlassEffectAPIAvailable, isLiquidGlassAvailable } from './capabilitie
 export type {
   GlassStyle, GlassColorScheme, GlassEffectStyleConfig, GlassTintColor,
   GlassViewStyle, GlassViewProps, GlassContainerProps,
+  GlassRenderingMode, GlassDebugView, GlassBackgroundRect, GlassBackgroundSource,
+  GlassRenderStats, GlassOpticalOptions, GlassOpticalProps,
 } from './types.js';

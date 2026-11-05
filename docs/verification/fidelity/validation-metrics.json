@@ -1,0 +1,231 @@
+{
+  "chromium": {
+    "stats": {
+      "startTime": "2026-11-05T00:05:23.213Z",
+      "duration": 104375.752,
+      "expected": 27,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "attachments": [
+      {
+        "test": "DPR 1 / 1.5 / 2 / 3: analytic normals, SDF coverage and explicit resolution",
+        "project": "",
+        "name": "resolution-and-normals",
+        "result": [
+          {
+            "dpr": 1,
+            "normal": {
+              "rgb": [
+                87,
+                188,
+                230
+              ],
+              "ratio": 1,
+              "width": 346,
+              "cssWidth": 346
+            },
+            "decodedNormal": [
+              -0.8093850667380706,
+              0.005772916065137412,
+              0.5825958806652605
+            ],
+            "fractionalEdgePixels": 852,
+            "disabledAAFractionalPixels": 0
+          },
+          {
+            "dpr": 1.5,
+            "normal": {
+              "rgb": [
+                88,
+                188,
+                231
+              ],
+              "ratio": 1.5,
+              "width": 519,
+              "cssWidth": 346
+            },
+            "decodedNormal": [
+              -0.8048253057162751,
+              0.005772916065137412,
+              0.598205476028818
+            ],
+            "fractionalEdgePixels": 1294,
+            "disabledAAFractionalPixels": 0
+          },
+          {
+            "dpr": 2,
+            "normal": {
+              "rgb": [
+                87,
+                188,
+                230
+              ],
+              "ratio": 2,
+              "width": 692,
+              "cssWidth": 346
+            },
+            "decodedNormal": [
+              -0.8093850667380706,
+              0.005772916065137412,
+              0.5825958806652605
+            ],
+            "fractionalEdgePixels": 1740,
+            "disabledAAFractionalPixels": 0
+          },
+          {
+            "dpr": 3,
+            "normal": {
+              "rgb": [
+                87,
+                188,
+                230
+              ],
+              "ratio": 3,
+              "width": 1038,
+              "cssWidth": 346
+            },
+            "decodedNormal": [
+              -0.8093850667380706,
+              0.005772916065137412,
+              0.5825958806652605
+            ],
+            "fractionalEdgePixels": 2590,
+            "disabledAAFractionalPixels": 0
+          }
+        ]
+      },
+      {
+        "test": "Spectral radiance and wavelength refraction are independent, localized contributions",
+        "project": "",
+        "name": "independent-color-contributions",
+        "result": {
+          "spectral": {
+            "changed": 2453,
+            "center": 0,
+            "alphaChanged": 0
+          },
+          "dispersion": {
+            "changed": 1351,
+            "greenChanged": 0
+          }
+        }
+      },
+      {
+        "test": "sRGB patches follow the documented linear-light clear backing without clipping",
+        "project": "",
+        "name": "linear-color-patches",
+        "result": [
+          {
+            "actual": [
+              36,
+              36,
+              36
+            ],
+            "expected": [
+              36,
+              36,
+              36
+            ]
+          },
+          {
+            "actual": [
+              132,
+              132,
+              132
+            ],
+            "expected": [
+              132,
+              132,
+              132
+            ]
+          },
+          {
+            "actual": [
+              132,
+              132,
+              132
+            ],
+            "expected": [
+              132,
+              132,
+              132
+            ]
+          },
+          {
+            "actual": [
+              255,
+              255,
+              255
+            ],
+            "expected": [
+              255,
+              255,
+              255
+            ]
+          }
+        ]
+      },
+      {
+        "test": "Optical renderer compiles, bends the grid and keeps foreground usable",
+        "project": "",
+        "name": "spatial-displacement-metrics",
+        "result": {
+          "changedRimPixels": 2330,
+          "rimDifference": 345818,
+          "centerDifference": 0
+        }
+      },
+      {
+        "test": "SVG experiment distinguishes element filtering from actual backdrop displacement",
+        "project": "",
+        "name": "svg-backdrop-experiment",
+        "result": {
+          "elementChangedPixels": 0,
+          "backdropChangedPixels": 1040,
+          "urlSyntaxAccepted": true
+        }
+      }
+    ]
+  },
+  "compatibility": {
+    "stats": {
+      "startTime": "2026-11-05T00:07:50.604Z",
+      "duration": 38946.244000000006,
+      "expected": 6,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "attachments": [
+      {
+        "test": "Actual GPU path or capability fallback is identifiable and keeps HTML usable",
+        "project": "chromium",
+        "name": "capabilities",
+        "result": {
+          "browser": "chromium",
+          "webgl2": true
+        }
+      },
+      {
+        "test": "Actual GPU path or capability fallback is identifiable and keeps HTML usable",
+        "project": "firefox",
+        "name": "capabilities",
+        "result": {
+          "browser": "firefox",
+          "webgl2": true
+        }
+      },
+      {
+        "test": "Actual GPU path or capability fallback is identifiable and keeps HTML usable",
+        "project": "webkit",
+        "name": "capabilities",
+        "result": {
+          "browser": "webkit",
+          "webgl2": true
+        }
+      }
+    ]
+  }
+}
